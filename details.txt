@@ -1,0 +1,1111 @@
+
+Product Details
+---------------
+selva_id: amzn_B0FRKLQMM2
+title: Apple iPhone 17, US Version, 256GB, eSIM, Lavender- Unlocked (Renewed)
+provider: amazon
+price: $817.49 USD
+price_range: min=$817.49 max=$817.49
+rating: 3.4 | reviews: 13
+availability: in_stock (Only 14 left in stock - order soon.) | delivery: n/a | prime: n/a
+url: https://www.amazon.com/Apple-Version-Lavender-Unlocked-Renewed/dp/B0FRKLQMM2/
+image: https://m.media-amazon.com/images/I/41FXy6P7y5L._AC_SR38,50_.jpg
+images: https://m.media-amazon.com/images/I/41FXy6P7y5L._AC_SR38,50_.jpg
+brand: Visit the Amazon Renewed Store
+
+Detail Variants
+---------------
+- B0FRKLQMM2 | 256GB | n/a USD | unknown
+  options: Size=256GB
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKLQMM2&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKX18MF | 512GB | n/a USD | unknown
+  options: Size=512GB
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKX18MF&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKLQMM2 | Lavender | n/a USD | unknown
+  options: Color=Lavender
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKLQMM2&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKHC2DT | Black | n/a USD | unknown
+  options: Color=Black
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKHC2DT&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKS39NK | Mist Blue | n/a USD | unknown
+  options: Color=Mist Blue
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKS39NK&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKNSSJ1 | Sage | n/a USD | unknown
+  options: Color=Sage
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKNSSJ1&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKK475P | White | n/a USD | unknown
+  options: Color=White
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKK475P&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKB91RQ | AT&T | n/a USD | unknown
+  options: Service provider=AT&T
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKB91RQ&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKM9PR8 | Boost Mobile | n/a USD | unknown
+  options: Service provider=Boost Mobile
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKM9PR8&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKBWN96 | Cricket | n/a USD | unknown
+  options: Service provider=Cricket
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKBWN96&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKKB5LS | T-Mobile | n/a USD | unknown
+  options: Service provider=T-Mobile
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKKB5LS&delivery_zip=30308&device=desktop&engine=amazon_product
+- B0FRKNTQM9 | Tracfone | n/a USD | unknown
+  options: Service provider=Tracfone
+  checkout: https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKNTQM9&delivery_zip=30308&device=desktop&engine=amazon_product
+...and 4 more
+
+Raw Provider Response
+---------------------
+{
+  "search_metadata": {
+    "id": "69a5e58710c26df944341dc9",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/VPBD0rRX-6u2_cglyRjnKg/69a5e58710c26df944341dc9.json",
+    "created_at": "2026-03-02 19:31:19 UTC",
+    "processed_at": "2026-03-02 19:31:19 UTC",
+    "amazon_product_url": "https://www.amazon.com/dp/B0FRKLQMM2/?",
+    "raw_html_file": "https://serpapi.com/searches/VPBD0rRX-6u2_cglyRjnKg/69a5e58710c26df944341dc9.html",
+    "total_time_taken": 3.28
+  },
+  "search_parameters": {
+    "engine": "amazon_product",
+    "asin": "B0FRKLQMM2",
+    "amazon_domain": "amazon.com",
+    "device": "desktop",
+    "delivery_zip": "30308"
+  },
+  "product_results": {
+    "asin": "B0FRKLQMM2",
+    "title": "Apple iPhone 17, US Version, 256GB, eSIM, Lavender- Unlocked (Renewed)",
+    "variants": [
+      {
+        "title": "Size",
+        "items": [
+          {
+            "position": 1,
+            "asin": "B0FRKLQMM2",
+            "name": "256GB",
+            "selected": true,
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKLQMM2&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 2,
+            "asin": "B0FRKX18MF",
+            "name": "512GB",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKX18MF&delivery_zip=30308&device=desktop&engine=amazon_product"
+          }
+        ]
+      },
+      {
+        "title": "Color",
+        "items": [
+          {
+            "position": 1,
+            "asin": "B0FRKLQMM2",
+            "name": "Lavender",
+            "image": "https://m.media-amazon.com/images/I/41FXy6P7y5L._SS64_.jpg",
+            "selected": true,
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKLQMM2&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 2,
+            "asin": "B0FRKHC2DT",
+            "name": "Black",
+            "image": "https://m.media-amazon.com/images/I/41ecg3kWg1L._SS64_.jpg",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKHC2DT&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 3,
+            "asin": "B0FRKS39NK",
+            "name": "Mist Blue",
+            "image": "https://m.media-amazon.com/images/I/41jF6OMkD8L._SS64_.jpg",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKS39NK&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 4,
+            "asin": "B0FRKNSSJ1",
+            "name": "Sage",
+            "image": "https://m.media-amazon.com/images/I/41g1u0MZYOL._SS64_.jpg",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKNSSJ1&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 5,
+            "asin": "B0FRKK475P",
+            "name": "White",
+            "image": "https://m.media-amazon.com/images/I/41QI+oIJkPL._SS64_.jpg",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKK475P&delivery_zip=30308&device=desktop&engine=amazon_product"
+          }
+        ]
+      },
+      {
+        "title": "Service provider",
+        "items": [
+          {
+            "position": 1,
+            "asin": "B0FRKB91RQ",
+            "name": "AT&T",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKB91RQ&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 2,
+            "asin": "B0FRKM9PR8",
+            "name": "Boost Mobile",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKM9PR8&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 3,
+            "asin": "B0FRKBWN96",
+            "name": "Cricket",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKBWN96&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 4,
+            "asin": "B0FRKKB5LS",
+            "name": "T-Mobile",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKKB5LS&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 5,
+            "asin": "B0FRKNTQM9",
+            "name": "Tracfone",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKNTQM9&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 6,
+            "asin": "B0FRKLQMM2",
+            "name": "Unlocked",
+            "selected": true,
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKLQMM2&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 7,
+            "asin": "B0FRK35G1J",
+            "name": "Verizon",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRK35G1J&delivery_zip=30308&device=desktop&engine=amazon_product"
+          }
+        ]
+      },
+      {
+        "title": "Product grade",
+        "items": [
+          {
+            "position": 1,
+            "asin": "B0FRKLQMM2",
+            "name": "Renewed",
+            "selected": true,
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKLQMM2&delivery_zip=30308&device=desktop&engine=amazon_product"
+          },
+          {
+            "position": 2,
+            "asin": "B0G4RQDX62",
+            "name": "Renewed Premium",
+            "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0G4RQDX62&delivery_zip=30308&device=desktop&engine=amazon_product"
+          }
+        ]
+      }
+    ],
+    "brand": "Visit the Amazon Renewed Store",
+    "link": "https://www.amazon.com/Apple-Version-Lavender-Unlocked-Renewed/dp/B0FRKLQMM2/",
+    "link_clean": "https://www.amazon.com/dp/B0FRKLQMM2/",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FRKLQMM2&delivery_zip=30308&device=desktop&engine=amazon_product",
+    "thumbnail": "https://m.media-amazon.com/images/I/41FXy6P7y5L._AC_SR38,50_.jpg",
+    "rating": 3.4,
+    "reviews": 13,
+    "bought_last_month": "50+ bought in past month",
+    "price": "$817.49",
+    "extracted_price": 817.49,
+    "old_price": "$550.00",
+    "extracted_old_price": 550,
+    "delivery": [
+      "FREE delivery March 4 - 5"
+    ],
+    "stock": "Only 14 left in stock - order soon."
+  },
+  "purchase_options": {
+    "refurbished_excellent": {
+      "caption": "Refurbished - Excellent",
+      "price": "$817.49",
+      "extracted_price": 817.49,
+      "delivery": [
+        "FREE delivery March 4 - 5"
+      ],
+      "stock": "Only 14 left in stock - order soon.",
+      "features": {
+        "shipper_seller": {
+          "text": "DirectCertified",
+          "details": {
+            "heading": "Shipper / Seller",
+            "content": "DirectCertified"
+          },
+          "link": {
+            "text": "DirectCertified",
+            "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=AUA7F6JLX2JA1&asin=B0FRKLQMM2&ref_=dp_merchant_link"
+          }
+        },
+        "condition": {
+          "text": "Refurbished - Excellent",
+          "details": {
+            "heading": "Refurbished - Excellent",
+            "content": "This Excellent condition Amazon Renewed pre-owned product has been inspected, tested, and refurbished as necessary to be fully functional and meets following quality standards:",
+            "items": [
+              {
+                "label": "Screen",
+                "description": "When present, no scratches."
+              },
+              {
+                "label": "Body",
+                "description": "No signs of cosmetic damage (scratches, dents, and other) are visible when the product is held 12 inches away."
+              },
+              {
+                "label": "Battery",
+                "description": "When included, batteries have a capacity that exceeds 80% of the original battery life."
+              },
+              {
+                "label": "Accessories",
+                "description": "Generic or original equipment manufacturer accessories and packaging provided."
+              },
+              {
+                "label": "Guarantee",
+                "description": "90-day Amazon Renewed Guarantee (or within 365 days of receipt of a Renewed Automotive product)."
+              }
+            ],
+            "faqs": [
+              {
+                "question": "What is Amazon Renewed?",
+                "answer": "Amazon Renewed is your trusted destination for pre-owned, refurbished products. Products sold on Amazon Renewed are professionally inspected and tested to work as expected by an Amazon qualified and performance-managed supplier. If we source products from a third-party seller, the third-party seller tests and inspects the product."
+              },
+              {
+                "question": "What should I expect to receive with my Amazon Renewed purchase?",
+                "answer": "Amazon Renewed purchases will come with accessories equivalent to those that shipped in the box when new. These items may not be original but will be compatible and fully functional. Amazon Renewed products will be packaged in either original packaging or in a new and clean cardboard box. Learn more",
+                "link": {
+                  "text": "Learn more",
+                  "link": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GRAS7M4E8YJCLWH7"
+                }
+              },
+              {
+                "question": "What is the Amazon Renewed Guarantee?",
+                "answer": "If you are unsatisfied with your purchase, return the product within 90 days of receipt of your original purchase (or within 365 days of receipt of a Renewed Premium or Renewed Automotive product) for a full refund or a replacement. Learn more",
+                "link": {
+                  "text": "Learn more",
+                  "link": "https://www.amazon.com/gp/help/customer/display.html/?nodeId=G4ZAA22U35N373NX"
+                }
+              },
+              {
+                "question": "What are the refurbished condition types?",
+                "answer": {
+                  "summary": "Amazon Renewed pre-owned products have been inspected, tested, and refurbished as necessary to be fully functional and in one of four conditions:",
+                  "sections": [
+                    {
+                      "title": "Refurbished - Premium",
+                      "items": [
+                        {
+                          "label": "Screen",
+                          "description": "When present, no scratches."
+                        },
+                        {
+                          "label": "Body",
+                          "description": "No signs of cosmetic damage (scratches, dents, and other) are visible when the product is held 12 inches away."
+                        },
+                        {
+                          "label": "Battery",
+                          "description": "When included, batteries have a capacity that exceeds 90% of the original battery life."
+                        },
+                        {
+                          "label": "Accessories",
+                          "description": "Generic or original equipment manufacturer accessories and packaging provided."
+                        },
+                        {
+                          "label": "Guarantee",
+                          "description": "Renewed Premium items come with a 365-day return period."
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Refurbished - Excellent",
+                      "items": [
+                        {
+                          "label": "Screen",
+                          "description": "When present, no scratches."
+                        },
+                        {
+                          "label": "Body",
+                          "description": "No signs of cosmetic damage (scratches, dents, and other) are visible when the product is held 12 inches away."
+                        },
+                        {
+                          "label": "Battery",
+                          "description": "When included, batteries have a capacity that exceeds 80% of the original battery life."
+                        },
+                        {
+                          "label": "Accessories",
+                          "description": "Generic or original equipment manufacturer accessories and packaging provided."
+                        },
+                        {
+                          "label": "Guarantee",
+                          "description": "90-day Amazon Renewed Guarantee (or within 365 days of receipt of a Renewed Automotive product)."
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Refurbished - Good",
+                      "items": [
+                        {
+                          "label": "Screen",
+                          "description": "When present, no scratches."
+                        },
+                        {
+                          "label": "Body",
+                          "description": "Light scratches, barely visible when holding the product 12 inches away, and imperceptible to touch."
+                        },
+                        {
+                          "label": "Battery",
+                          "description": "When included, batteries have a capacity that exceeds 80% of the original battery life."
+                        },
+                        {
+                          "label": "Accessories",
+                          "description": "Generic or original equipment manufacturer accessories and packaging provided."
+                        },
+                        {
+                          "label": "Guarantee",
+                          "description": "90-day Amazon Renewed Guarantee (or within 365 days of receipt of a Renewed Automotive product)."
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Refurbished - Acceptable",
+                      "items": [
+                        {
+                          "label": "Screen",
+                          "description": "When present, may have a small number of shallow scratches that are invisible when the screen is turned on."
+                        },
+                        {
+                          "label": "Body",
+                          "description": "Light scratches, clearly visible when holding the product 12 inches away, and perceptible to touch."
+                        },
+                        {
+                          "label": "Battery",
+                          "description": "When included, batteries have a capacity that exceeds 80% of the original battery life."
+                        },
+                        {
+                          "label": "Accessories",
+                          "description": "Generic or original equipment manufacturer accessories and packaging provided."
+                        },
+                        {
+                          "label": "Guarantee",
+                          "description": "90-day Amazon Renewed Guarantee (or within 365 days of receipt of a Renewed Automotive product)."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "link": {
+            "text": "Learn more",
+            "link": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GRAS7M4E8YJCLWH7"
+          }
+        },
+        "returns": {
+          "text": "90-day refund/replacement",
+          "details": {
+            "heading": "90-day refund/replacement",
+            "content": "This item can be returned in its original condition for a full refund or replacement within 90 days of receipt. You may receive a partial or no refund on used, damaged or materially different returns."
+          },
+          "link": {
+            "text": "Read full return policy",
+            "link": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7&ref_=dp_ret_policy"
+          }
+        },
+        "payment": {
+          "text": "Secure transaction",
+          "details": {
+            "heading": "Your transaction is secure",
+            "content": "We work hard to protect your security and privacy. Our payment security system encrypts your information during transmission. We don’t share your credit card details with third-party sellers, and we don’t sell your information to others. Learn more"
+          },
+          "link": {
+            "text": "Learn more",
+            "link": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909010"
+          }
+        }
+      }
+    },
+    "refurbished_good": {
+      "caption": "Refurbished - Good",
+      "price": "$781.92",
+      "extracted_price": 781.92,
+      "delivery": [
+        "FREE delivery March 4 - 5"
+      ],
+      "stock": "Only 5 left in stock - order soon.",
+      "features": {
+        "shipper_seller": {
+          "text": "DirectCertified",
+          "details": {
+            "heading": "Shipper / Seller",
+            "content": "DirectCertified"
+          },
+          "link": {
+            "text": "DirectCertified",
+            "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=AUA7F6JLX2JA1&asin=B0FRKLQMM2&ref_=dp_merchant_link"
+          }
+        },
+        "condition": {
+          "text": "Refurbished - Good",
+          "details": {
+            "heading": "Refurbished - Good",
+            "content": "This Good condition Amazon Renewed pre-owned product has been inspected, tested, and refurbished as necessary to be fully functional and meets following quality standards:",
+            "items": [
+              {
+                "label": "Screen",
+                "description": "When present, no scratches."
+              },
+              {
+                "label": "Body",
+                "description": "Light scratches, barely visible when holding the product 12 inches away, and imperceptible to touch."
+              },
+              {
+                "label": "Battery",
+                "description": "When included, batteries have a capacity that exceeds 80% of the original battery life."
+              },
+              {
+                "label": "Accessories",
+                "description": "Generic or original equipment manufacturer accessories and packaging provided."
+              },
+              {
+                "label": "Guarantee",
+                "description": "90-day Amazon Renewed Guarantee (or within 365 days of receipt of a Renewed Automotive product)."
+              }
+            ],
+            "faqs": [
+              {
+                "question": "What is Amazon Renewed?",
+                "answer": "Amazon Renewed is your trusted destination for pre-owned, refurbished products. Products sold on Amazon Renewed are professionally inspected and tested to work as expected by an Amazon qualified and performance-managed supplier. If we source products from a third-party seller, the third-party seller tests and inspects the product."
+              },
+              {
+                "question": "What should I expect to receive with my Amazon Renewed purchase?",
+                "answer": "Amazon Renewed purchases will come with accessories equivalent to those that shipped in the box when new. These items may not be original but will be compatible and fully functional. Amazon Renewed products will be packaged in either original packaging or in a new and clean cardboard box. Learn more",
+                "link": {
+                  "text": "Learn more",
+                  "link": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GRAS7M4E8YJCLWH7"
+                }
+              },
+              {
+                "question": "What is the Amazon Renewed Guarantee?",
+                "answer": "If you are unsatisfied with your purchase, return the product within 90 days of receipt of your original purchase (or within 365 days of receipt of a Renewed Premium or Renewed Automotive product) for a full refund or a replacement. Learn more",
+                "link": {
+                  "text": "Learn more",
+                  "link": "https://www.amazon.com/gp/help/customer/display.html/?nodeId=G4ZAA22U35N373NX"
+                }
+              },
+              {
+                "question": "What are the refurbished condition types?",
+                "answer": {
+                  "summary": "Amazon Renewed pre-owned products have been inspected, tested, and refurbished as necessary to be fully functional and in one of four conditions:",
+                  "sections": [
+                    {
+                      "title": "Refurbished - Premium",
+                      "items": [
+                        {
+                          "label": "Screen",
+                          "description": "When present, no scratches."
+                        },
+                        {
+                          "label": "Body",
+                          "description": "No signs of cosmetic damage (scratches, dents, and other) are visible when the product is held 12 inches away."
+                        },
+                        {
+                          "label": "Battery",
+                          "description": "When included, batteries have a capacity that exceeds 90% of the original battery life."
+                        },
+                        {
+                          "label": "Accessories",
+                          "description": "Generic or original equipment manufacturer accessories and packaging provided."
+                        },
+                        {
+                          "label": "Guarantee",
+                          "description": "Renewed Premium items come with a 365-day return period."
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Refurbished - Excellent",
+                      "items": [
+                        {
+                          "label": "Screen",
+                          "description": "When present, no scratches."
+                        },
+                        {
+                          "label": "Body",
+                          "description": "No signs of cosmetic damage (scratches, dents, and other) are visible when the product is held 12 inches away."
+                        },
+                        {
+                          "label": "Battery",
+                          "description": "When included, batteries have a capacity that exceeds 80% of the original battery life."
+                        },
+                        {
+                          "label": "Accessories",
+                          "description": "Generic or original equipment manufacturer accessories and packaging provided."
+                        },
+                        {
+                          "label": "Guarantee",
+                          "description": "90-day Amazon Renewed Guarantee (or within 365 days of receipt of a Renewed Automotive product)."
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Refurbished - Good",
+                      "items": [
+                        {
+                          "label": "Screen",
+                          "description": "When present, no scratches."
+                        },
+                        {
+                          "label": "Body",
+                          "description": "Light scratches, barely visible when holding the product 12 inches away, and imperceptible to touch."
+                        },
+                        {
+                          "label": "Battery",
+                          "description": "When included, batteries have a capacity that exceeds 80% of the original battery life."
+                        },
+                        {
+                          "label": "Accessories",
+                          "description": "Generic or original equipment manufacturer accessories and packaging provided."
+                        },
+                        {
+                          "label": "Guarantee",
+                          "description": "90-day Amazon Renewed Guarantee (or within 365 days of receipt of a Renewed Automotive product)."
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Refurbished - Acceptable",
+                      "items": [
+                        {
+                          "label": "Screen",
+                          "description": "When present, may have a small number of shallow scratches that are invisible when the screen is turned on."
+                        },
+                        {
+                          "label": "Body",
+                          "description": "Light scratches, clearly visible when holding the product 12 inches away, and perceptible to touch."
+                        },
+                        {
+                          "label": "Battery",
+                          "description": "When included, batteries have a capacity that exceeds 80% of the original battery life."
+                        },
+                        {
+                          "label": "Accessories",
+                          "description": "Generic or original equipment manufacturer accessories and packaging provided."
+                        },
+                        {
+                          "label": "Guarantee",
+                          "description": "90-day Amazon Renewed Guarantee (or within 365 days of receipt of a Renewed Automotive product)."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "link": {
+            "text": "Learn more",
+            "link": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GRAS7M4E8YJCLWH7"
+          }
+        },
+        "returns": {
+          "text": "90-day refund/replacement",
+          "details": {
+            "heading": "90-day refund/replacement",
+            "content": "This item can be returned in its original condition for a full refund or replacement within 90 days of receipt. You may receive a partial or no refund on used, damaged or materially different returns."
+          },
+          "link": {
+            "text": "Read full return policy",
+            "link": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7&ref_=dp_ret_policy"
+          }
+        },
+        "payment": {
+          "text": "Secure transaction",
+          "details": {
+            "heading": "Your transaction is secure",
+            "content": "We work hard to protect your security and privacy. Our payment security system encrypts your information during transmission. We don’t share your credit card details with third-party sellers, and we don’t sell your information to others. Learn more"
+          },
+          "link": {
+            "text": "Learn more",
+            "link": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201909010"
+          }
+        }
+      }
+    }
+  },
+  "protection_plan": [
+    {
+      "position": 1,
+      "asin": "B089MC7LC4",
+      "title": "2-Year Protection Plan",
+      "price": "$209.99",
+      "extracted_price": 209.99,
+      "link": "https://www.amazon.com/dp/B089MC7LC4/"
+    }
+  ],
+  "item_specifications": {
+    "brand": "Apple",
+    "operating_system": "iOS 18",
+    "ram_memory_installed_size": "8 GB",
+    "memory_storage_capacity": "256 GB",
+    "screen_size": "6.3 Inches",
+    "model_name": "iPhone 17",
+    "wireless_carrier": "Unlocked",
+    "cellular_technology": "5G",
+    "connectivity_technology": "Bluetooth, USB, Wi-Fi",
+    "color": "Lavender"
+  },
+  "about_item": [
+    "This phone is unlocked and compatible with any carrier of choice on GSM and CDMA networks (e.g. AT&T, T-Mobile, Sprint, Verizon, US Cellular, Cricket, Metro, Tracfone, Mint Mobile, etc.).",
+    "Please check with your carrier to verify compatibility.",
+    "When you receive the phone, insert a SIM card from a compatible carrier. Then, turn it on, connect to Wi-Fi, and follow the on screen prompts to activate service.",
+    "The device does not come with headphones or a SIM card. It does include a generic (Mfi certified) charger and charging cable.",
+    "Tested for battery health and guaranteed to have a minimum battery capacity of 80%."
+  ],
+  "related_products": [
+    {
+      "position": 1,
+      "asin": "B0DHHVK432",
+      "title": "Apple iPhone 16, US Version, 128GB, Pink - Unlocked (Renewed)",
+      "link": "https://www.amazon.com/Apple-iPhone-16-Version-128GB/dp/B0DHHVK432/ref=pd_sbs_d_sccl_1_1/146-3582512-2112141?pd_rd_w=Cw4mP&content-id=amzn1.sym.aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_p=aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9&pd_rd_i=B0DHHVK432&psc=1",
+      "link_clean": "https://www.amazon.com/Apple-iPhone-16-Version-128GB/dp/B0DHHVK432/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0DHHVK432&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/61KOR4NQXTL._AC_UL165_SR165,165_.jpg",
+      "rating": 4.4,
+      "reviews": 1623,
+      "price": "$614.97",
+      "extracted_price": 614.97,
+      "delivery": [
+        "Get it as soon as Tomorrow, Mar 3"
+      ]
+    },
+    {
+      "position": 2,
+      "asin": "B0FSBL8L13",
+      "title": "Apple iPhone 17 Pro, US Version, 1TB, eSIM, Cosmic Orange- Unlocked (Renewed)",
+      "link": "https://www.amazon.com/Apple-Version-Orange-Unlocked-Renewed/dp/B0FSBL8L13/ref=pd_sbs_d_sccl_1_2/146-3582512-2112141?pd_rd_w=Cw4mP&content-id=amzn1.sym.aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_p=aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9&pd_rd_i=B0FSBL8L13&psc=1",
+      "link_clean": "https://www.amazon.com/Apple-Version-Orange-Unlocked-Renewed/dp/B0FSBL8L13/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FSBL8L13&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/51--V4WSvZL._AC_UL165_SR165,165_.jpg",
+      "rating": 3.8,
+      "reviews": 53,
+      "price": "$1,499.97",
+      "extracted_price": 1499.97,
+      "delivery": [
+        "Get it as soon as Tomorrow, Mar 3"
+      ]
+    },
+    {
+      "position": 3,
+      "asin": "B0DNTC3HXX",
+      "title": "Apple iPhone 16 Pro, US Version, 256GB, Desert Titanium - Unlocked (Renewed Premium)",
+      "link": "https://www.amazon.com/Apple-iPhone-Version-Desert-Titanium/dp/B0DNTC3HXX/ref=pd_sbs_d_sccl_1_3/146-3582512-2112141?pd_rd_w=Cw4mP&content-id=amzn1.sym.aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_p=aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9&pd_rd_i=B0DNTC3HXX&psc=1",
+      "link_clean": "https://www.amazon.com/Apple-iPhone-Version-Desert-Titanium/dp/B0DNTC3HXX/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0DNTC3HXX&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/61U1XRJMAML._AC_UL165_SR165,165_.jpg",
+      "rating": 4.3,
+      "reviews": 663,
+      "price": "$774.97",
+      "extracted_price": 774.97,
+      "delivery": [
+        "Get it as soon as Tomorrow, Mar 3"
+      ]
+    },
+    {
+      "position": 4,
+      "asin": "B0DPDSD11Q",
+      "title": "Apple iPhone 16, US Version, 128GB, Teal - Unlocked (Renewed Premium)",
+      "link": "https://www.amazon.com/Apple-iPhone-Version-128GB-Teal/dp/B0DPDSD11Q/ref=pd_sbs_d_sccl_1_4/146-3582512-2112141?pd_rd_w=Cw4mP&content-id=amzn1.sym.aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_p=aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9&pd_rd_i=B0DPDSD11Q&psc=1",
+      "link_clean": "https://www.amazon.com/Apple-iPhone-Version-128GB-Teal/dp/B0DPDSD11Q/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0DPDSD11Q&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/71nLlkiFxOL._AC_UL165_SR165,165_.jpg",
+      "rating": 4.4,
+      "reviews": 1103,
+      "price": "$609.00",
+      "extracted_price": 609,
+      "delivery": [
+        "Get it as soon as Saturday, Mar 7"
+      ]
+    },
+    {
+      "position": 5,
+      "asin": "B0FV5GJLXQ",
+      "title": "Apple iPhone Air, US Version, 256GB, eSIM, Sky Blue- Unlocked (Renewed)",
+      "link": "https://www.amazon.com/Apple-iPhone-Version-Unlocked-Renewed/dp/B0FV5GJLXQ/ref=pd_sbs_d_sccl_1_5/146-3582512-2112141?pd_rd_w=Cw4mP&content-id=amzn1.sym.aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_p=aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9&pd_rd_i=B0FV5GJLXQ&psc=1",
+      "link_clean": "https://www.amazon.com/Apple-iPhone-Version-Unlocked-Renewed/dp/B0FV5GJLXQ/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FV5GJLXQ&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/41YB4GIqgZL._AC_UL165_SR165,165_.jpg",
+      "rating": 4.7,
+      "reviews": 32,
+      "price": "$817.49",
+      "extracted_price": 817.49,
+      "delivery": [
+        "Get it Mar 4 - 5"
+      ]
+    },
+    {
+      "position": 6,
+      "asin": "B0DHJ9SCJ4",
+      "title": "Apple iPhone 16 Pro Max, US Version, 256GB, Desert Titanium - Unlocked (Renewed)",
+      "link": "https://www.amazon.com/Apple-iPhone-Version-Desert-Titanium/dp/B0DHJ9SCJ4/ref=pd_sbs_d_sccl_1_6/146-3582512-2112141?pd_rd_w=Cw4mP&content-id=amzn1.sym.aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_p=aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9&pd_rd_i=B0DHJ9SCJ4&psc=1",
+      "link_clean": "https://www.amazon.com/Apple-iPhone-Version-Desert-Titanium/dp/B0DHJ9SCJ4/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0DHJ9SCJ4&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/61zU0mI4EsL._AC_UL165_SR165,165_.jpg",
+      "rating": 4.3,
+      "reviews": 2405,
+      "price": "$819.87",
+      "extracted_price": 819.87,
+      "delivery": [
+        "Get it as soon as Saturday, Mar 7"
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "position": 1,
+      "title": "Is this phone worth upgrading or is it just all hype? Watch to see!",
+      "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/930920f5-9df9-4481-ad8a-1ce06d1eeb20/default.jobtemplate.hls.m3u8",
+      "thumbnail": "https://m.media-amazon.com/images/I/513I23JRK2L.jpg",
+      "duration": "1:59",
+      "vendor": "Smart Shopper",
+      "vendor_thumbnail": "https://m.media-amazon.com/images/I/61sW6QrJyfL._CR0,0,493,493_._FMjpg_._SL34_.jpg",
+      "date": "Feb 27, 2026"
+    },
+    {
+      "position": 2,
+      "title": "Apple iPhone 17 Pro Max TechWoven Case Black Unboxing",
+      "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/2c54e699-ddd1-499f-9dac-437bf6e46512/default.vertical.jobtemplate.hls.m3u8",
+      "thumbnail": "https://m.media-amazon.com/images/I/71NxVO3JuvL.jpg",
+      "duration": "0:16",
+      "vendor": "Souliphone Review",
+      "vendor_thumbnail": "https://m.media-amazon.com/images/I/91UPWFvRWGL._CR0,0,2796,2796_._FMjpg_._SL34_.jpg",
+      "date": "Jan 23, 2026"
+    },
+    {
+      "position": 3,
+      "title": "iPhone 17 Pro design or iPhone 17 Normal design",
+      "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/35fca3ac-ed69-4537-837f-69ebfa87736f/default.vertical.jobtemplate.hls.m3u8",
+      "thumbnail": "https://m.media-amazon.com/images/I/61zwM4eg3QL.jpg",
+      "duration": "0:10",
+      "vendor": "Ersbit",
+      "vendor_thumbnail": "https://m.media-amazon.com/images/I/81plIjv9h1L._CR0,0,2161,2161_._FMjpg_._SL34_.jpg",
+      "date": "Feb 23, 2026"
+    },
+    {
+      "position": 4,
+      "title": "ULANZI MT33 Flexible Camera Tripod with Phone Holder",
+      "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/79fccb12-1f8e-421f-b333-8bcd015522ad/default.vertical.jobtemplate.hls.m3u8",
+      "thumbnail": "https://m.media-amazon.com/images/I/71CuuDmzErL.jpg",
+      "duration": "1:40",
+      "vendor": "Souliphone Review",
+      "vendor_thumbnail": "https://m.media-amazon.com/images/I/91UPWFvRWGL._CR0,0,2796,2796_._FMjpg_._SL34_.jpg",
+      "date": "Feb 13, 2026"
+    },
+    {
+      "position": 5,
+      "title": "iPhone Air and iPhone 17 overall design",
+      "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/ae214b3b-b02e-46dc-a986-eec7764ea096/default.vertical.jobtemplate.hls.m3u8",
+      "thumbnail": "https://m.media-amazon.com/images/I/61OkJHBDwDL.jpg",
+      "duration": "0:08",
+      "vendor": "Ersbit",
+      "vendor_thumbnail": "https://m.media-amazon.com/images/I/81plIjv9h1L._CR0,0,2161,2161_._FMjpg_._SL34_.jpg",
+      "date": "Dec 7, 2025"
+    },
+    {
+      "position": 6,
+      "title": "Apple iPhone 17 Review",
+      "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/468a8483-2c2a-4a68-bb67-8e15960090e9/default.jobtemplate.hls.m3u8",
+      "thumbnail": "https://m.media-amazon.com/images/I/71KJXpRvwqL.jpg",
+      "duration": "1:49",
+      "vendor": "Bonfashion",
+      "vendor_thumbnail": "https://m.media-amazon.com/images/I/71wskPJOUsL._CR0,0,974,974_._FMjpg_._SL34_.jpg",
+      "date": "Feb 25, 2026"
+    },
+    {
+      "position": 7,
+      "title": "iPhone 17 Complete Water Resistance Testing",
+      "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/093c2bb5-d9ca-414d-bb48-2d0d2dce22c8/default.vertical.jobtemplate.hls.m3u8",
+      "thumbnail": "https://m.media-amazon.com/images/I/615Rx1k9KSL.jpg",
+      "duration": "3:33",
+      "vendor": "Ersbit",
+      "vendor_thumbnail": "https://m.media-amazon.com/images/I/81plIjv9h1L._CR0,0,2161,2161_._FMjpg_._SL34_.jpg",
+      "date": "Feb 17, 2026"
+    },
+    {
+      "position": 8,
+      "title": "Omg, love it! Dual camera, amazing quality=content glow-up!",
+      "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/8e87bf13-3666-4231-bcd8-5894fb5d9238/default.vertical.jobtemplate.hls.m3u8",
+      "thumbnail": "https://m.media-amazon.com/images/I/91hiAUpad8L.jpg",
+      "duration": "0:20",
+      "vendor": "Abigail February",
+      "vendor_thumbnail": "https://m.media-amazon.com/images/I/91NsQEbtH8L._CR189,429,1072,1072_._FMjpg_._SL34_.jpg",
+      "date": "Feb 14, 2026"
+    },
+    {
+      "position": 9,
+      "title": "Iphone 17 know everything",
+      "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/c5867a23-48ac-4d5a-a053-a6111061018d/default.vertical.jobtemplate.hls.m3u8",
+      "thumbnail": "https://m.media-amazon.com/images/I/717M-jDcofL.jpg",
+      "duration": "0:25",
+      "vendor": "Genuine _Reviews",
+      "vendor_thumbnail": "https://m.media-amazon.com/images/I/A1twbynZFmL._CR0,0,1747,1747_._FMjpg_._SL34_.jpg",
+      "date": "Dec 28, 2025"
+    },
+    {
+      "position": 10,
+      "title": "iPhone 17 Sage and Google Pixel 9a Peony",
+      "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a4d4461c-665e-4378-88c4-3b97a7a376bb/default.vertical.jobtemplate.hls.m3u8",
+      "thumbnail": "https://m.media-amazon.com/images/I/61oAS-Y70tL.jpg",
+      "duration": "0:12",
+      "vendor": "Ersbit",
+      "vendor_thumbnail": "https://m.media-amazon.com/images/I/81plIjv9h1L._CR0,0,2161,2161_._FMjpg_._SL34_.jpg",
+      "date": "Feb 27, 2026"
+    }
+  ],
+  "sponsored_brands": [
+    {
+      "position": 1,
+      "asin": "B0GH79FZY6",
+      "title": "MFi Certified Flash Drive 256GB for iPhone Thumb Drive, USB Memory Stick iPhone Flash Drive Photo Stick for Photos Videos, High Speed External Storage Jump Drive for iPhone/iPad/Android/PC(Sky Blue)",
+      "link": "https://aax-us-east-retail-direct.amazon.com/x/c/JPkFMJkvgf7TXzXvdTLRP8AAAAGcsAifCgEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDIgICCbeuYX/clv1c_ek-wxYHXLbbWDdHYVp8JHgIJ7TpWipMXpYt2UNjhmwoyAhlMOTCeMRYxtxsfTslujgnFUdb6QfI2NphvwHaytpdDzG9pGbCfIDl1pqpq3cA0SAnmV96dNE245-0AbiInwRYK5nMOYwzq_BASJQambrLbss3cFFLwYtjh4wNaJAa_-Cq0HYfFkAdILQeAv5eMgLc9Js9BCR2sPai1N-kpUCIJnRh6IV9_F6Nr0OCrZzEeN665PrFyfaguv8Rk7wNgSnBDenMW9k5IjtlGNrdmEgqFgZpmlgKX7Jkm0AbrNXrNqLDDTE0FUdtpDvzDCwn_79Ch5cKkNRXEkU85f885ekb3TFNFwjTQC8Uc9ivg1dKiKJp6NY_eFhyFHq3dps5CDlYdf3BHXEkM1iN01FXmR4fPQKPpQ6pXJilcgoQa2ku4GSDUn-fy5uCLQRN2hdbIBcYzhKh_9FJaLynnPh2KSlqD00kAdx7HgwmDm2PZBhxHkL8R3VkR7kEv1LPgU12sdounC2fg_ggTOuUIdOQ5LdYJYwd-ykJFFTsDF9-V0HmQULzuWd9ExIsmrLBCD0bpGEcG3oWHlu5_A_qU3JjiBbyTjeNcpkO66aLjkl5O_5DU-Yt1I48C_HBK9AkrjVsAqZ3Lbz7h1e9uz5tdpVDBVo6SE7Y-oikarUt6jL_CJsLZchTthU1FII1VmP9umb8YYH0VUHnQOMuDBMhucIuYCiOucIDg1yS08G8JevE4kGORSfGM4bNGEBiAhP84x8Qy-hRWeAH_Tf3cRfCoKuL-q8TZ9iK_uOsvUGDKf-JA0DkzWZrzVymSlH2Tr81G0NRdTU1RzRy_kpxqv4xC-f4q3JVkzHSGanHXN1k4kR9phGQJ465vSG8L8DEL30U3Q_mADH0fizpGf06CdTcBSxzsXrBMXkgVz6DU5LF0fckYwI-8Uk0d8KVNe7rsCw6F7yuufSGD0X0gvv3Twoq0Px2WospMTjHM67PxRWlmwDgQYEXEJshTFbfloLjMip_ZnUda2pDo3uC3iveNwX4MIaSSDrGKcQxu_qVh9O2ATBmGHqAjU6hU5AqAmMz7kO3ASj1kPINL9OE_WnOXQ6mqNvjEoBziutar-5UUTZ2zO6zoB6IqMiVioTdIYhczgHT4ONWIwup2hEVTecrIREXMcA-ckJt9OuMIm_d99fimSQfQ16cLat7_YE1DEcKuDILMxahjRtAwotY8WWP0HbNpmP4yCauUU9pC-30fj6DzPE9Wn7bu0Kw1zCpYXIPl4NtdDt--GzqeLkkHde89TnR7WAG-7DnfIRnFUhbKlfuEInYYtogvYuwbvabjLVxDFkCIcdRXDDyklorKleflbkfGwMwCDLlEDDqv1Fuj4DtZaOiixEBYaVng1y41Z4BPPGnkNrFJW_NrVcrH7a7Tx4dD27UDUq5Cubz5Gr2mMCUsMADqXeGwSNvotA_-Ejt9omfwjAbcD03Lv-QqtESTXrv1pWlC_9jDrkRAqBK6qnEX3dEK6nNdJmTx-N-IbI1sAwqXrJRUGm5p3Oo25KvmS--N9TPM7orF04W0EYNc8wf0CA/https://www.amazon.com/dp/B0GH79FZY6/?_encoding=UTF8&pd_rd_i=B0GH79FZY6&pd_rd_i=B0GH79FZY6&ref_=sbx_be_s_sparkle_ssd_cta&pd_rd_w=kjrGk&content-id=amzn1.sym.ccb770a9-35d1-4af6-8af2-bcbd12656fbb&pf_rd_p=ccb770a9-35d1-4af6-8af2-bcbd12656fbb&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9",
+      "link_clean": "https://www.amazon.com/dp/B0GH79FZY6/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0GH79FZY6&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://m.media-amazon.com/images/I/41cvY1IXVTL._AC_SR100,100_QL65_.jpg",
+      "video": {
+        "link": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/21b9c233-1f23-4634-9647-e2c232d893ad.mp4/productVideoOptimized.mp4",
+        "thumbnail": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/21b9c233-1f23-4634-9647-e2c232d893ad.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG"
+      },
+      "rating": 5,
+      "reviews": 92,
+      "price": "$39.99",
+      "extracted_price": 39.99
+    },
+    {
+      "position": 2,
+      "asin": "B0F7XMJD1B",
+      "title": "DOOGEE Fire 5 Rugged Phone Unlocked, 13000mAh Android 15 Dual Sim, 6.6\" HD+90Hz Waterproof Phone 12GB+64GB, 2TB Expand, NFC, Face ID, OTG, Reverse Charging Rugged Smartphone for Outdoor Work",
+      "link": "https://aax-us-east-retail-direct.amazon.com/x/c/JPfqjzMcek4xJtm30XBC8O4AAAGcsAifCwEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDIgICCCnyrK/clv1c_ek-wxYHXLbbWDdHYVp8pHgIJ7TpWipMXp4t25pLjHUsK8XwD3tgnHtqGdgFGsk6OmeyKDqhMZToXk9T_RLM2op5OxX14QuSLF2glHibX2vw-h3JDghuCpmX56NnU5fCN00Bfi7O_Rgxn-L-WWcFgTYL5MN2blGm6EtF4r5Yri4MHcz_VUu59PnsMF3Rdyd48n4PFd9orvodN0-3HtGpgokfePPf_p-6mZEqH-S4jpVAi60folq6DRlRYSl53cJmL344I7gwpGxBvbqoR-rOsmsAq_amUvzfxo7CNFT8gWD3ICuSz7vGXVkqbQSnnJlx0GtHQ0iHdNpC0NF8YdaEBqPBirrXDDpp8TBaV9vdQv4obCCYaTf6pnTO1In0WhoUcEVvGPr9dKUJsTiY68xVIHgY5LUdJ2MoUK7UezbPt5xQGej_-Hfe-VNnH0Vclp3FiY2Q02yWzrxLkhXoPWMqpRzlJifhPflrEaA4FBzPTfBJDZbO-JZNOa4khgne_ao0jQAbE8UtHFJbKRBJ89EGYImiwcvq9PpyaE_cu4NiKRtJnBYZBbbWPPP3s9PHHegulFz1N8IoLURQu4VSxJH1LZWtlsXLeNkgLXQZkEt8d8YC-TGBy9q9dvkjv4Vo8ZggoSbjwgqu35ZQbkoow8mY3b-laKnnnPrMDI19jUlBe9zHS4kMcDQXXJj54adMGqUp1wUrShKKyZpbwWhxETz5fmjggAIDM2USs928MSnE5GmKRCXy0gpdGcrB6cy6y6OntyXWjYw8O06IQS2LMyndCnBjQgN5808Ib6WqEiTFF0PozURo-AxqYLBzncI3JEMRVTU1HzSA0kBzHZVSm5xukRsAT61gE763KjkkwkZDri2sJ-6hHQG-vAJfg-I8_u_KCjIxvK7BKPFo96GPs0kTiJohMfkAV0yDFB3LUE2U4Lq6d5lNde-V_N1FglaKCrjkrl5lnFYkusXFF5qjCn-gnLGraxZkSiTdcTo_-VSGVZ3x6ANRUB5wm7euYmoK4mKmjDhSeuYgKTxPVh6cSqEwb1781XAN4o-zqlQcrqd7EDwOLF2SCA5PXRT9vAFBkiLiXx9PAUhhJmah0VrRm85GnO3Q69cA5x3Mw9M5-ANyNz76Orotiak_yD_xy3Yr1sFBrA8FfJQ5c4iCLkUNBT87DDzv4_aXSIuUPcprlMQdybJUBAB9_WgZ4Y-Uuq-evEh0aKZJxokJMh4Wy4lDtt6HUseRq89ng8qI05YtmG0Ysxfs7XWPSa9fwau7D5AXXX3igdte3yEI7AU709m64ZX2YGCfyuUUXzIzAwn8xO0C95osZ6qkJORCwOLrbpOvBkBui_OQctwhZ_xf5WB2s2C1s4ELAofY71dR3LMqvEDZigYSZbSfoExruLHycO5K6HnRdHPhW-rI8-SIkzzoheDk_bpnKvp-smA_Oa5g5iBOV3GGVj4Sn0MrXm7Wc0-eEFO6YLZfaN2lVvEUqoGL-oT2nu1RbgSzTzHTleA4G8Gy42VaPW0FId6Mi3_GYS6eSFnxBcUkl1lZ9xbMeHmyToJVrq5nipkg0gIz8HA/https://www.amazon.com/dp/B0F7XMJD1B/?_encoding=UTF8&pd_rd_i=B0F7XMJD1B&pd_rd_i=B0F7XMJD1B&ref_=sbx_be_s_sparkle_ssd_cta&pd_rd_w=kjrGk&content-id=amzn1.sym.ccb770a9-35d1-4af6-8af2-bcbd12656fbb&pf_rd_p=ccb770a9-35d1-4af6-8af2-bcbd12656fbb&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9",
+      "link_clean": "https://www.amazon.com/dp/B0F7XMJD1B/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F7XMJD1B&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://m.media-amazon.com/images/I/513OG3NoRPL._AC_SR100,100_QL65_.jpg",
+      "video": {
+        "link": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/495caba9-b23a-47ef-9e09-2feff0494246.mp4/productVideoOptimized.mp4",
+        "thumbnail": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/495caba9-b23a-47ef-9e09-2feff0494246.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG"
+      },
+      "rating": 4.3,
+      "reviews": 30,
+      "price": "$139.99",
+      "extracted_price": 139.99,
+      "old_price": "$189.97",
+      "extracted_old_price": 189.97
+    },
+    {
+      "position": 3,
+      "asin": "B0FWB4WBKS",
+      "title": "DOOGEE Fire 7 Ultra Rugged Smartphone Unlocked 5G, Rugged Phone 13000mAh Battery/33W Fast Charge, 8GB+256GB(2TB TF), 6.6” HD+ 90Hz Display, IP68/IP69K Waterproof Phone, 125dB Speaker, NFC, Dual SIM",
+      "link": "https://aax-us-east-retail-direct.amazon.com/x/c/JP7vSMhPobmpYKwooQmE-HQAAAGcsAifDAEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDIgICCgemJ-/clv1c_ek-YBYXWbcbaXj1XZ_uQgo-tjwzCf_usLjyDM3enDgYQqwY2TV_8pQMU9eY1bJgUj0P6RktpinJaayI7LsmukAJe1UGC7SmP3jFsz8qk1I4m7wHRwLJZdy185MHs9tJr6xEKxv4-vgVL5E2EAf401tV7oNiokjVrvtUxDrcqxp5rsTvEZqYva3wueBZa5AUzSBXTwEhRJx-YtdbdtEkdYk7eG046QW-m2TgqaZAJa1MlTdOyCP6uVQsvoNlN3pxi3hzO712_Qh789YZ8RBYM0D1Hogpkkv9dTJJvY3zJa53WM_ej7AViO9hoGBId-xgdAddV0vRNIV4kJsTfLqRrkRhqBRSkcJY4Y9miOAsI1sttcdU-EM1tDJjY5ght8MprMli53neS8SYlJVrqA9BRPp_85HtLR1xE-Y8LuwGzSn9cWRhN-CjUX1ijx1Irm2mpXhNDeDwHgDTqTmxDdAk_JXGgDzsveUwbSCC3MVd4jYtZsVaV5QJw7nfzbiOOv19I-tMpcKCQwnDxLPblML6zwiPbEgSyxEKRgkcEMXZciE48xGqP051S5P8Xv4XXTnYXHmVSyAairSpJhXuNNZNDOhaATc5TlhsHcCb2ItUMMPM4_Q2tC7n5MYdfP4n-c06RJrB_wFQkd-KWTzzICj6lDj2zj5_3cnpfExunT7cI0ELglLM9yPqY7e-A0GDzhg80G5xLPS1ZXC4DkuFiYtdeoxYFgu3n54h7n-CVynNuPOwci7sl7jgbi0hw-nWtthBWpE7didk3-XUVhqPMZgEjeRTYjTFkX2Y-WZuBHZdZBlVJu2b8ahLi4046dqirXPwKM8KNsVykyoWIMHFnXNwS08Z9T9ZII2IKmggsdCEZq44alVhXsqMPRjwn8yKeQglueGEdgMg-cJhzUdTA1qS0zAXukW_-znl6JhTZQ6kg_5ZnaYNIqHZnazpd1NSryZuOfS-MJYYdbX5kTt61Gi8-bHLGGBN3_DAIIi_LvgnYwnDFoJ5LhMJDb5QzKLcbhY5heqUgByJMz6w5IINtq75uPiGHlVYGEiwYXiWFWeI5nKD5mCU2Oq9EBE-Ah3ll1za3KnBKE5bpMhyq0hlAEsrIGBzUDsQCPIbwD6tt4GmJgY96eCXuUhP5sP_Y4mEFTUWj-F96ZyM1FTGbWJC2IKVX18yTjU21TQepGJSb31mI_J91wOKT2F88IwCzzU24hbn-DykOJSj3wq7_1PpZSpxxm4jaPIC8L-cIX3dIAacwe4k8-_NBHK6JfH1jSGBULhcdK9vlZDh1Ib2Otf8U3fW6p35_nKkrceTwkzZIlw0gubjd680l2HUmUGz0-lv-8Th4LVebJx6l5bSqTEyL7E06vC6xSTjGr5bBQJa_A7o6kuseCYUaYW0aQ-FuPUeeX2Kcj0zxhKJdfuWsUyfP57TbeRawfoQPOXnBQWQ9GgdPTH1zkaEMsdlqFhZy6_gpphz2XodzIcNfh6Hz8PQIF-9Zgnq84l8c7kmBW9q7VVOciFOHfUFRZardTmADN5EujltJa5Bfy3FMwxDt/https://www.amazon.com/dp/B0FWB4WBKS/?_encoding=UTF8&pd_rd_i=B0FWB4WBKS&pd_rd_i=B0FWB4WBKS&ref_=sbx_be_s_sparkle_ssd_cta&pd_rd_w=kjrGk&content-id=amzn1.sym.ccb770a9-35d1-4af6-8af2-bcbd12656fbb&pf_rd_p=ccb770a9-35d1-4af6-8af2-bcbd12656fbb&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9",
+      "link_clean": "https://www.amazon.com/dp/B0FWB4WBKS/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FWB4WBKS&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://m.media-amazon.com/images/I/51g9aWpZzdL._AC_SR100,100_QL65_.jpg",
+      "video": {
+        "link": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/ddeebae1-ddc6-424b-8fcc-87e87e0eae15.mp4/productVideoOptimized.mp4",
+        "thumbnail": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/ddeebae1-ddc6-424b-8fcc-87e87e0eae15.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG"
+      },
+      "rating": 5,
+      "reviews": 9,
+      "price": "$319.99",
+      "extracted_price": 319.99,
+      "old_price": "$459.99",
+      "extracted_old_price": 459.99
+    },
+    {
+      "position": 4,
+      "asin": "B0FLYJVX13",
+      "title": "MFi Certified Flash Drive 256GB for iPhone Thumb Drive Photo Stick, High Speed USB Memory Stick iPhone Flash Drive for Photos Videos, External Storage Jump Drive for iPhone/iPad/Android/PC (Blue)",
+      "link": "https://aax-us-east-retail-direct.amazon.com/x/c/JE0h56BVHuXghE7QwW1BSRUAAAGcsAifDQEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDIgICDe_4Vl/clv1c_ek-IBYf3bcbaXg5XmWcTAF7jhEpXIXeZOjiz5knLFefxYc_NIpkoE6dLwznhO1Wa6dsfIZvsgdxUtpgtCD_4NGQifKViEjP53_ip3xD-GOz-B5VXDB68Hcz66MMQjnx-U18rMapxeJBukoG9FKRNPvDaofnkNlRFcwWyzLimxJQNzVs_tUSyll999Er37Eg8CxmTzBMjj6Yb9OV70wJS0GlUf3ZHhoMgidaTvVwG1IXQIn3GDJkD9JG4z7Z6X0y-KtxhX190qmPPf6CcrnhypEq5f8L27T3Htcam67t8DRhwarO3iMjfd5qfBpUUIePio2Hq5E9oS2Xp4aYdpMBqv8N51NQAMLtzaZ5qUyaQTdm54pgzBjr9GYfwZd6Ozim5x6_lwqyOWPPKHUWA9LUC1tTx2FLFJ9JZre_fXeoaAfmnFfYkVB4WVZjo9unf3BjbP7dEVPFsLxV5_WtwxySgywncVi3wb-A4q2SvZNDtgtCWaQS-WGaWLWemmAcyVZHYaFxZeqeGKbEXwFT37TUYVniQZvCdwxp1qNrx8aGNUy0_BgulR3IiI1cazD4raG3nUFgVtp9Jd8ZiJ49-bz_CzvUEOtTTum2Qp_It9AybiAQPg1iioAwaoyke27_K84q8qIwMin8W9SCXzLs8N76g5i74Y3R0UhdeTOTFudA2VVgvl4FOn0-KywzAkR_dQKkBgnycWWvUSjRxAvaOSBZAHYRWm3ibUcifInvsZLalrz8KjqT64vqmoP6Q_s7PoBR006MYvxGHV2nSP__1txr6Pj_Ajlh7dSBQ9PO44OGF5SiR9HgX4NX1DLCDVbyXUFrmRboat4KLHGljycmQB79CJKi-GXN6y_ZtfuJMVmXtE0ilAyNFbIGQRFjYFFKsF-LIGoj_8dPqrkciMs_vggDI2TprOZxNZyU2OF6DAXvomeEX9jvehw_3KqXs0CkV9G_gpJHk1uJF0oF14w6g8Fayht5P_y7mY86lbE4krpjZOBGQiV4uGNJNaNLqTGAZ7mRl18Z7wiX0H_cUTc-8bvbFXvkuOSsW1L8AbBUNEaPQcQ-PLunsqT2rIpTy6H3GOPnPQ24NAtes-rpfDFvjJBN664Ee9iweDpF0OyFOV2nxfAmLdjTouCIn9SsJa1Jt85eh4u0KnWR0YLxqLEITRhU6ugy501xiuvrqXqDFh4LsGD9gO5LwF86OTj1wUj1vCarDIL1cx8NbT9WiWO141ZaHYeShkshOddDZbg2wl3HHWSlmkMiGwgYnmPpuv5rZhrgOiOcj3vbtQq8Dv_bPnuiAyrl3I3ylM7eH7X5tlDdfrzUYfXFXuzl65JhI6k075KchB-FvGU-BrYXbrM3OBT5roxnCml-FMYr7WsmW2LAlo3BcJdjgquMZJe9Ka4XqwUM2GoZbcOg1JTS7etBU4eg4hcvAMD-QdUnvB4xv-lB5thlvefQP1C0xp9I9x_oZ1tj4Z-mo5D9AfrjrHLJb9UXuC5cNIFACglP0BVLdbg3i9fJWuPJOyev3ocfwf15Q3ASQFxm9e1LLySr-7p1X-XpOJK0rko-NIw/https://www.amazon.com/dp/B0FLYJVX13/?_encoding=UTF8&pd_rd_i=B0FLYJVX13&pd_rd_i=B0FLYJVX13&ref_=sbx_be_s_sparkle_ssd_cta&pd_rd_w=kjrGk&content-id=amzn1.sym.ccb770a9-35d1-4af6-8af2-bcbd12656fbb&pf_rd_p=ccb770a9-35d1-4af6-8af2-bcbd12656fbb&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9",
+      "link_clean": "https://www.amazon.com/dp/B0FLYJVX13/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FLYJVX13&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://m.media-amazon.com/images/I/31F0jt06ErL._AC_SR100,100_QL65_.jpg",
+      "video": {
+        "link": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/ec69c0f8-2c99-44ed-8e04-964392efda41.mp4/productVideoOptimized.mp4",
+        "thumbnail": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/ec69c0f8-2c99-44ed-8e04-964392efda41.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG"
+      },
+      "rating": 4.2,
+      "reviews": 536,
+      "price": "$26.99",
+      "extracted_price": 26.99,
+      "old_price": "$36.99",
+      "extracted_old_price": 36.99
+    },
+    {
+      "position": 5,
+      "asin": "B0FNDC33ZS",
+      "title": "Android 15 Tablet, 30GB RAM + 128GB ROM 1TB TF, 2025 Tablet with Keyboard and Mouse, 10.1 inch Touchscreen, 8000mAh Battery, Incell Display, 2.0GHz, Gemini AI, 5G WiFi, BT 5.0, GPS - Metal Purple",
+      "link": "https://aax-us-east-retail-direct.amazon.com/x/c/JNYPFLX9_L5GZ0BhpUoXh04AAAGcsAifDgEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDIgICABgt7W/clv1c_ek-wBYHXLbbWzlYLElcvOigzbZJzuUarNM7xhFPqnVAvxXbQweWi930NusTZ1Dwffe0Y4UJQODpzeAZaNiWlELEtEml2b6bAaznNjVLWoMR3yI_2ceXpXW3578vgg-LRN5VLOozm6fbZM9OEpVRF69HcouHMFkCa8mVziDGy1rI3TGLTjaGm9maecyC13FvkwHuP82c_16f79OX3etylcGiHD00-S1Kq8U_sHp2XH_1JO2qUE1-a-FaKTFF6FtkUIu19X190J0nXRhWpnvegTuaIsmTnYIQhePYNuEBfAB3m45u77sjaBJqfB5uu2-ChI1ULtgxgnMxf-7_GbMYDZXYk2lj4B8vGr-PrtlMEIXjmqnGp5fmRAlExYWL6vdK3P4cR4V6sNyRAUQjHck_cQPx-00rezm5vbWyg4eE0Xz8VDfyylPpa58vO-Ol-hXFXmG0evoZaH6ZrtCNqvqFdgzuUtf7GMT9aD0zwuByWxGOEMql_XhTB-eO7oRmX1NHEsL_TNRKFGUNCs2tzsfOxPzqT9qQmkAx1tyPu8efShip0PsSWltlObP6ZeX7ezrQC8QPnbENfKJC4hJLfYH_z0TU1OtDI3RN0ovLt-3zbhoAMWJbK1HUNgn63bYwrkUiU5WuZW6jCc0aQkd51aab77mjXHEK6cbzOibWufH_ZFvvgdpBBFgvanrw5XoonXG97G1iXNAZlnfLKhwYDCkexbxsmTMQ81wba0FiF56Fzz9lVGboVbVtC_x-XhkF8txCMT-NZ1cWYXSvncexOBIl8hy3GRbULgqXUzh9nIOs3ZBmSqZ0iCeG_rgluJtW9Y_vJV59sVdM1h9W9cOsM8xGmAgEE3skwmwP_F8ExoiMdBMd26hps5OlF7XcnhczgcCPS8K8dFg8Cd8ss0iNZTgtI_EUUe1DiUGJW5Pn_a0ekucN_DJGd-HR-sdWYb0LAzdzcFOYCGLbtJ0ZKMeFaTfj7HZLaopC_sLGFSR2VXRcKcHwWn2lbU4kU8kdpYMSSQy1puTUvlkGaraq2tTbJxObzxkcCQf6c4QqaLF7OsOc_Q_s5qEo1PoB4jEPQcNpQG006f2TLBhVx4LfmZ0gGTSu5Otft7ibVwLd5LopN3B2yccfu2CemuIZkg0vWlF4ANSW1tCmsP2wS0GSbNyOUMNJx24Rj8j2M1KpTwLXgok9JVYev3Yvka5JXwi64WmB7Km2G02wdD8WgfqlmAcCk1wISJc8AY5vpg7A8cfrYQXSPM82E29DZANGg1Nyn3welQjyPzSnMjSKsetdfCRXvwCFSQMDXcKwQmxSEYwVHP8bMVAvGGKKBaLA0zFA2uKCg2hiYXQfEkDwy2vWRQCt7bVIrXewZ871rybo5uMO-eRVINe6r2pKE5tHP3N-KjeEz66daB4TVgwZp2AXtKj9qeQkxxdOYNkhtxfJNiCOtWN3VZN3pLVqd7BEeu9dnUjGh87IZKFjPHPMeAmbROTl0wcD2xTtdKvlhZ1a8cL_biK6AOmQ2OdcXkZcUJMfnUhSwrEfhD5-BNN0ZJ2eO-moehW-RYvzmckY/https://www.amazon.com/dp/B0FNDC33ZS/?_encoding=UTF8&pd_rd_i=B0FNDC33ZS&pd_rd_i=B0FNDC33ZS&ref_=sbx_be_s_sparkle_ssd_cta&pd_rd_w=kjrGk&content-id=amzn1.sym.ccb770a9-35d1-4af6-8af2-bcbd12656fbb&pf_rd_p=ccb770a9-35d1-4af6-8af2-bcbd12656fbb&pf_rd_r=4T6ACHJCM3PGRD9S8C2D&pd_rd_wg=tbVBO&pd_rd_r=827b6754-f56d-470b-b6c7-04a42e2f1fa9",
+      "link_clean": "https://www.amazon.com/dp/B0FNDC33ZS/",
+      "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FNDC33ZS&delivery_zip=30308&device=desktop&engine=amazon_product",
+      "thumbnail": "https://m.media-amazon.com/images/I/51M3607K8EL._AC_SR100,100_QL65_.jpg",
+      "video": {
+        "link": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/0afbc016-16ee-4013-9456-f9cac4f98774.mp4/productVideoOptimized.mp4",
+        "thumbnail": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/0afbc016-16ee-4013-9456-f9cac4f98774.mp4/r/THUMBNAIL_360P_FRAME_3_CAPTURE_2.JPG"
+      },
+      "rating": 4.2,
+      "reviews": 83,
+      "price": "$109.99",
+      "extracted_price": 109.99,
+      "old_price": "$159.99",
+      "extracted_old_price": 159.99
+    }
+  ],
+  "reviews_information": {
+    "summary": {
+      "images": [
+        "https://m.media-amazon.com/images/I/71p6zLHydFL.jpg",
+        "https://m.media-amazon.com/images/I/71eaEV7bJBL.jpg",
+        "https://m.media-amazon.com/images/I/61v0Vp09jNL.jpg",
+        "https://m.media-amazon.com/images/I/71evlFkc+vL.jpg",
+        "https://m.media-amazon.com/images/I/71w2ikUZGmL.jpg",
+        "https://m.media-amazon.com/images/I/71WyjY5XayL.jpg",
+        "https://m.media-amazon.com/images/I/61FAlp0PccL.jpg",
+        "https://m.media-amazon.com/images/I/71cZNdMoRCL.jpg"
+      ],
+      "customer_reviews": {
+        "5 star": 80,
+        "4 star": 10,
+        "3 star": 0,
+        "2 star": 0,
+        "1 star": 10
+      }
+    },
+    "authors_reviews": [
+      {
+        "position": 1,
+        "title": "Works and looks like it's brand new",
+        "text": "I was afraid to get this from Amazon's certified refurbished brand, but it was a great deal for what I got. I'm writing this when I received the phone in February 2026, I can see that it was made in July of 2025, and I can see it was turned on for the first time in October of 2025. The battery capacity is at 100%, and everything else on the phone looks and acts like it's brand new. I've had zero issues.",
+        "rating": 5,
+        "date": "February 27, 2026",
+        "author": "Summer",
+        "author_link": "https://www.amazon.com/gp/profile/amzn1.account.AHI7RKTF2ADHGFF3LXA2YETEYGDQ",
+        "author_image": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "product": {
+          "size": "256GB",
+          "color": "Lavender",
+          "service_provider": "Unlocked",
+          "product_grade": "Renewed"
+        }
+      },
+      {
+        "position": 2,
+        "title": "Great Phone",
+        "text": "Amazing phone, has been great to me",
+        "rating": 5,
+        "date": "February 28, 2026",
+        "author": "Jacob Quevedo",
+        "author_link": "https://www.amazon.com/gp/profile/amzn1.account.AEINYIEGNMIMFUJS44B56MMKGA4A",
+        "author_image": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "product": {
+          "size": "256GB",
+          "color": "Mist Blue",
+          "service_provider": "Unlocked",
+          "product_grade": "Renewed"
+        }
+      },
+      {
+        "position": 3,
+        "title": "Very good",
+        "text": "Came in perfect, super happy",
+        "rating": 5,
+        "date": "February 27, 2026",
+        "author": "Braily S",
+        "author_link": "https://www.amazon.com/gp/profile/amzn1.account.AHZ4WTYKXH5F7UJ3MMYSGMSIMKDA",
+        "author_image": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "product": {
+          "size": "256GB",
+          "color": "Mist Blue",
+          "service_provider": "Unlocked",
+          "product_grade": "Renewed"
+        }
+      },
+      {
+        "position": 4,
+        "title": "iPhone 17",
+        "text": "Was a very easy switch with the help of T-Mobile associates 🙂",
+        "rating": 5,
+        "date": "February 7, 2026",
+        "author": "Kerri Cox",
+        "author_link": "https://www.amazon.com/gp/profile/amzn1.account.AEN6SGCNN6TPJDJJSRY7TJM26GFA",
+        "author_image": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "product": {
+          "size": "256GB",
+          "color": "Lavender",
+          "service_provider": "Unlocked",
+          "product_grade": "Renewed Premium"
+        }
+      },
+      {
+        "position": 5,
+        "title": "Kkkk",
+        "text": "The phone didn’t come with the actual box of the iPhone, but the phone looks good, why I feel like, I like the camera of my iPhone 14 than 17😅 the camera of iPhone 17 is like the camera of Samsung s25 more vibrant",
+        "rating": 4,
+        "date": "February 18, 2026",
+        "author": "David",
+        "author_link": "https://www.amazon.com/gp/profile/amzn1.account.AHYSQVABBK6BP2EU5PE5MQMNJ3VA",
+        "author_image": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "images": [
+          "https://m.media-amazon.com/images/I/61v0Vp09jNL._SY88.jpg",
+          "https://m.media-amazon.com/images/I/61FAlp0PccL._SY88.jpg",
+          "https://m.media-amazon.com/images/I/71evlFkc+vL._SY88.jpg",
+          "https://m.media-amazon.com/images/I/71cZNdMoRCL._SY88.jpg",
+          "https://m.media-amazon.com/images/I/71p6zLHydFL._SY88.jpg",
+          "https://m.media-amazon.com/images/I/71WyjY5XayL._SY88.jpg",
+          "https://m.media-amazon.com/images/I/71eaEV7bJBL._SY88.jpg",
+          "https://m.media-amazon.com/images/I/71w2ikUZGmL._SY88.jpg"
+        ],
+        "helpful_votes": "2 people found this helpful",
+        "product": {
+          "size": "256GB",
+          "color": "Sage",
+          "service_provider": "Unlocked",
+          "product_grade": "Renewed"
+        }
+      },
+      {
+        "position": 6,
+        "title": "Extraordinario teléfono",
+        "text": "Exelente",
+        "rating": 5,
+        "date": "January 18, 2026",
+        "author": "Vinicio A Ochoa Lebrun",
+        "author_link": "https://www.amazon.com/gp/profile/amzn1.account.AGMDFSWNNMEGDYWXVFJHIBW4XZ7A",
+        "author_image": "https://m.media-amazon.com/images/S/amazon-avatars-global/b267c012-37eb-427e-ad4e-ec81ee081c51._CR305%2C0%2C888%2C888_SX460_.jpg",
+        "helpful_votes": "4 people found this helpful",
+        "product": {
+          "size": "256GB",
+          "color": "Mist Blue",
+          "service_provider": "Unlocked",
+          "product_grade": "Renewed"
+        }
+      },
+      {
+        "position": 7,
+        "title": "WORKED LIKE A CHARM",
+        "text": "WORKED LIKE A CHARM",
+        "rating": 5,
+        "date": "January 9, 2026",
+        "author": "Matt Thompson",
+        "author_link": "https://www.amazon.com/gp/profile/amzn1.account.AF5ZHD6Z5PW2WB4T3W6GTACN64QA",
+        "author_image": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "helpful_votes": "2 people found this helpful",
+        "product": {
+          "size": "256GB",
+          "color": "Lavender",
+          "service_provider": "AT&T",
+          "product_grade": "Renewed"
+        }
+      }
+    ]
+  }
+}

@@ -15,6 +15,10 @@ import { pretty, money, printSection } from "./format.js";
 import { readConfig, writeConfig } from "./config.js";
 import { tokenizeCard } from "./stripe.js";
 
+function amount(value: { amount: number } | null | undefined) {
+  return value?.amount ?? null;
+}
+
 export async function runCli(argv: string[]) {
   const program = new Command();
   program.name("selva").description("Selva shopping CLI").version("0.1.0");
@@ -39,24 +43,30 @@ export async function runCli(argv: string[]) {
     .command("search")
     .description("Search products")
     .argument("<query>", "Search query")
-    .action(async (query: string) => {
-      const response = await search(query);
+    .option("--raw", "Include full raw provider payloads")
+    .action(async (query: string, options: { raw?: boolean }) => {
+      const response = await search(query, { includeRaw: options.raw === true });
 
       if (response.notice) {
         console.log(response.notice);
       }
 
       printSection("Search Results");
-      if (!response.results.length) {
+      if (!response.products.length) {
         console.log("No products found.");
       }
 
-      for (const [index, item] of response.results.entries()) {
+      for (const [index, item] of response.products.entries()) {
         console.log(`${index + 1}. ${item.selva_id}`);
         console.log(`   ${item.title}`);
-        console.log(`   source: ${item.source} | price: ${money(item.price)} | rating: ${item.rating ?? "n/a"}`);
-        console.log(`   delivery: ${item.delivery_estimate ?? "n/a"} | availability: ${item.availability ?? "n/a"}`);
-        console.log(`   reviews: ${item.review_count ?? "n/a"} | prime: ${item.prime_eligible ?? "n/a"}`);
+        console.log(`   source: ${item.provider} | price: ${money(amount(item.price))}`);
+        console.log(`   rating: ${item.rating ?? "n/a"} | reviews: ${item.review_count ?? "n/a"}`);
+        const searchMeta = [`delivery: ${item.delivery_estimate ?? "n/a"}`];
+        if (item.availability_status !== "unknown") {
+          searchMeta.unshift(`availability: ${item.availability_status}`);
+        }
+        console.log(`   ${searchMeta.join(" | ")}`);
+        console.log(`   image: ${item.image_url ?? "n/a"}`);
         console.log(`   url: ${item.url ?? "n/a"}`);
       }
 
@@ -67,8 +77,10 @@ export async function runCli(argv: string[]) {
         }
       }
 
-      printSection("Raw Provider Responses");
-      console.log(pretty(response.raw));
+      if (response.raw_providers) {
+        printSection("Raw Provider Responses");
+        console.log(pretty(response.raw_providers));
+      }
     });
 
   program
@@ -79,23 +91,85 @@ export async function runCli(argv: string[]) {
       const response = await details(selvaId);
 
       printSection("Product Details");
-      if (!response.product) {
-        console.log("No normalized product available.");
-      } else {
-        const p = response.product;
-        console.log(`${p.selva_id}`);
-        console.log(`${p.title}`);
-        console.log(`source: ${p.source}`);
-        console.log(`price: ${money(p.price)} | rating: ${p.rating ?? "n/a"}`);
-        console.log(`delivery: ${p.delivery_estimate ?? "n/a"} | availability: ${p.availability ?? "n/a"}`);
-        console.log(`reviews: ${p.review_count ?? "n/a"} | prime: ${p.prime_eligible ?? "n/a"}`);
-        console.log(`url: ${p.url ?? "n/a"}`);
-        console.log(`image: ${p.image_url ?? "n/a"}`);
-        console.log(`variants: ${p.variants.length ? p.variants.join(", ") : "none"}`);
+      const p = response.product;
+      console.log(`selva_id: ${p.selva_id}`);
+      console.log(`title: ${p.title}`);
+      console.log(`provider: ${p.provider}`);
+      console.log(`price: ${money(amount(p.price))} ${p.price?.currency ?? "USD"}`);
+      if (p.price_range?.min || p.price_range?.max) {
+        console.log(
+          `price_range: min=${money(amount(p.price_range?.min))} max=${money(amount(p.price_range?.max))}`
+        );
       }
-
-      printSection("Raw Provider Response");
-      console.log(pretty(response.raw));
+      console.log(`rating: ${p.rating ?? "n/a"} | reviews: ${p.review_count ?? "n/a"}`);
+      const detailMeta = [`delivery: ${p.delivery_estimate ?? "n/a"}`, `prime: ${p.prime_eligible ?? "n/a"}`];
+      if (p.availability_status !== "unknown") {
+        detailMeta.unshift(`availability: ${p.availability_status} (${p.stock_status_text ?? "n/a"})`);
+      }
+      console.log(detailMeta.join(" | "));
+      console.log(`url: ${p.url}`);
+      console.log(`image: ${p.image_url ?? "n/a"}`);
+      if (p.images?.length) {
+        console.log(`images: ${p.images.join(", ")}`);
+      }
+      if (p.brand) {
+        console.log(`brand: ${p.brand}`);
+      }
+      if (p.merchant) {
+        console.log(`merchant: ${p.merchant.name ?? "n/a"} (${p.merchant.url ?? "n/a"})`);
+      }
+      if (p.description) {
+        console.log(`description: ${p.description}`);
+      }
+      if (p.item_specifications?.length) {
+        printSection("Item Specifications");
+        for (const line of p.item_specifications.slice(0, 12)) {
+          console.log(`- ${line}`);
+        }
+      }
+      if (p.user_reviews?.length) {
+        printSection("User Reviews");
+        for (const review of p.user_reviews.slice(0, 5)) {
+          const heading = `${review.rating != null ? `${review.rating}/5` : "n/a"}${review.author ? ` by ${review.author}` : ""}${review.title ? ` - ${review.title}` : ""}`;
+          console.log(`- ${heading}`);
+          console.log(`  ${review.text}`);
+        }
+      }
+      if (p.features?.length) {
+        console.log(`features: ${p.features.join(" | ")}`);
+      }
+      if (p.badges?.length) {
+        console.log(`badges: ${p.badges.join(", ")}`);
+      }
+      if (p.attributes && Object.keys(p.attributes).length) {
+        printSection("Detail Attributes");
+        for (const [key, values] of Object.entries(p.attributes)) {
+          console.log(`${key}: ${values.join(", ")}`);
+        }
+      }
+      printSection("Detail Variants");
+      if (!p.variants?.length) {
+        console.log("none");
+      } else {
+        for (const variant of p.variants.slice(0, 12)) {
+          console.log(
+            `- ${variant.variant_id} | ${variant.title ?? "n/a"} | ${money(amount(variant.price))} ${variant.price?.currency ?? "USD"} | ${variant.availability_status}`
+          );
+          if (variant.options && Object.keys(variant.options).length) {
+            console.log(
+              `  options: ${Object.entries(variant.options)
+                .map(([k, v]) => `${k}=${v}`)
+                .join(", ")}`
+            );
+          }
+          if (variant.checkout_url) {
+            console.log(`  checkout: ${variant.checkout_url}`);
+          }
+        }
+        if (p.variants.length > 12) {
+          console.log(`...and ${p.variants.length - 12} more`);
+        }
+      }
     });
 
   program
@@ -159,7 +233,12 @@ export async function runCli(argv: string[]) {
         console.log(`${order.id}`);
         console.log(`   selva_id: ${order.selva_id}`);
         console.log(`   status: ${order.status} | method: ${order.payment_method}`);
-        console.log(`   requested: $${order.requested_amount_usd} | final: ${order.final_amount_usd ? `$${order.final_amount_usd}` : "n/a"}`);
+        console.log(
+          `   subtotal: ${order.subtotal_amount ? `$${order.subtotal_amount}` : "n/a"} | tax: ${order.tax_amount ? `$${order.tax_amount}` : "$0.00"} | shipping: ${order.shipping_amount ? `$${order.shipping_amount}` : "$0.00"} | total: ${order.total_amount ? `$${order.total_amount}` : "n/a"} ${order.currency}`
+        );
+        if (order.failure_reason) {
+          console.log(`   failure_reason: ${order.failure_reason}`);
+        }
         console.log(`   created_at: ${order.created_at}`);
       }
     });
@@ -169,7 +248,13 @@ export async function runCli(argv: string[]) {
   settings.action(async () => {
     const response = await settingsSummary();
     const card = response.settings.card;
-    console.log(`threshold_limit: ${response.settings.approval_enabled ? `$${response.settings.approval_threshold_usd ?? "n/a"}` : "unset"}`);
+    console.log(
+      `threshold_limit: ${
+        response.settings.approval_enabled
+          ? `$${response.settings.approval_threshold_amount ?? "n/a"} ${response.settings.approval_threshold_currency ?? "USD"}`
+          : "unset"
+      }`
+    );
     console.log(`zip_code: ${response.settings.zip_code ?? "unset"}`);
     console.log(`payment_method: ${card ? `${card.issuer ?? "card"} **** ${card.last4 ?? "????"}` : "not linked"}`);
     console.log(`email: ${response.settings.email ?? "unset"}`);

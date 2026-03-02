@@ -18,7 +18,7 @@ bun run build
 bun run dist/dev-index.js register
 ```
 
-`dist/index.js` targets `https://api.selva.com` for production CLI usage.
+`dist/index.js` targets `https://api.useselva.com` for production CLI usage.
 
 ## Publish to npm
 

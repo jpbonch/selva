@@ -6,7 +6,7 @@ export interface SelvaCliConfig {
   apiKey?: string;
 }
 
-let apiBaseUrl = "https://api.selva.com";
+let apiBaseUrl = "https://api.useselva.com";
 
 export function configPath() {
   return path.join(homedir(), "selva", "config.json");

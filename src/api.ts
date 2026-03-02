@@ -1,5 +1,59 @@
 import { requireApiKey, resolveBaseUrl } from "./config.js";
 
+export type Provider = "amazon" | "shopify";
+export type AvailabilityStatus = "in_stock" | "out_of_stock" | "limited" | "unknown";
+
+export interface Money {
+  amount: number;
+  currency: string;
+  display?: string;
+  compare_at_amount?: number | null;
+}
+
+export interface SelvaVariant {
+  variant_id: string;
+  title?: string | null;
+  options?: Record<string, string>;
+  price?: Money | null;
+  image_url?: string | null;
+  availability_status: AvailabilityStatus;
+  checkout_url?: string | null;
+}
+
+export interface SelvaUserReview {
+  title?: string | null;
+  rating?: number | null;
+  text: string;
+  author?: string | null;
+}
+
+export interface SelvaProduct {
+  selva_id: string;
+  provider: Provider;
+  provider_product_id: string;
+  title: string;
+  description?: string | null;
+  url: string;
+  image_url?: string | null;
+  images?: string[];
+  price?: Money | null;
+  price_range?: { min?: Money; max?: Money } | null;
+  rating?: number | null;
+  review_count?: number | null;
+  availability_status: AvailabilityStatus;
+  stock_status_text?: string | null;
+  delivery_estimate?: string | null;
+  prime_eligible?: boolean | null;
+  brand?: string | null;
+  merchant?: { id?: string; name?: string; url?: string } | null;
+  variants?: SelvaVariant[];
+  attributes?: Record<string, string[]>;
+  badges?: string[];
+  features?: string[];
+  user_reviews?: SelvaUserReview[];
+  item_specifications?: string[];
+}
+
 async function parseResponse(response: Response) {
   const text = await response.text();
   let parsed: unknown = null;
@@ -44,7 +98,8 @@ export async function settingsSummary() {
       email: string | null;
       zip_code: string | null;
       approval_enabled: boolean;
-      approval_threshold_usd: number | null;
+      approval_threshold_amount: number | null;
+      approval_threshold_currency: string;
       card: {
         issuer: string | null;
         last4: string | null;
@@ -105,9 +160,10 @@ export async function setEmail(email: string) {
   return parseResponse(response);
 }
 
-export async function search(query: string) {
+export async function search(query: string, options?: { includeRaw?: boolean }) {
   const baseUrl = await resolveBaseUrl();
   const apiKey = await requireApiKey();
+  const includeRaw = options?.includeRaw === true;
 
   const response = await fetch(`${baseUrl}/search`, {
     method: "POST",
@@ -115,26 +171,29 @@ export async function search(query: string) {
       "content-type": "application/json",
       "x-api-key": apiKey
     },
-    body: JSON.stringify({ query })
+    body: JSON.stringify({ query, include_raw: includeRaw })
   });
 
   return parseResponse(response) as Promise<{
-    notice: string | null;
-    results: Array<{
+    notice?: string;
+    products: Array<{
       selva_id: string;
-      source: string;
+      provider: Provider;
       title: string;
-      price: number | null;
-      rating: number | null;
-      url: string | null;
-      delivery_estimate: string | null;
-      prime_eligible: boolean | null;
-      review_count: number | null;
-      availability: string | null;
-      variants: string[];
+      url: string;
+      image_url?: string | null;
+      price?: Money | null;
+      rating?: number | null;
+      review_count?: number | null;
+      availability_status: AvailabilityStatus;
+      delivery_estimate?: string | null;
+      prime_eligible?: boolean | null;
     }>;
-    raw: Record<string, unknown>;
-    errors: Array<{ provider: string; message: string }>;
+    raw_providers?: {
+      amazon?: unknown;
+      shopify?: unknown;
+    };
+    errors: Array<{ provider: Provider; message: string }>;
   }>;
 }
 
@@ -149,22 +208,7 @@ export async function details(selvaId: string) {
   });
 
   return parseResponse(response) as Promise<{
-    source: string;
-    product: {
-      selva_id: string;
-      source: string;
-      title: string;
-      price: number | null;
-      rating: number | null;
-      url: string | null;
-      delivery_estimate: string | null;
-      prime_eligible: boolean | null;
-      review_count: number | null;
-      availability: string | null;
-      variants: string[];
-      image_url: string | null;
-    } | null;
-    raw: unknown;
+    product: SelvaProduct;
   }>;
 }
 
@@ -204,8 +248,12 @@ export async function orders() {
       selva_id: string;
       status: string;
       payment_method: string;
-      requested_amount_usd: string;
-      final_amount_usd: string | null;
+      subtotal_amount: string | null;
+      tax_amount: string | null;
+      shipping_amount: string | null;
+      total_amount: string | null;
+      currency: string;
+      failure_reason: string | null;
       created_at: string;
     }>;
   }>;
