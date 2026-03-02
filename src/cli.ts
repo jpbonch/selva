@@ -197,8 +197,19 @@ export async function runCli(argv: string[]) {
           }
 
           const stripeConfig = await stripePublishableKey();
+          const isAmazonPurchase = selvaId.startsWith("amzn_");
+          const publishableKey = isAmazonPurchase
+            ? (stripeConfig.rye_stripe_publishable_key ?? "")
+            : stripeConfig.stripe_publishable_key;
+
+          if (isAmazonPurchase && !publishableKey) {
+            throw new Error(
+              "Amazon/Rye purchase tokenization requires RYE_STRIPE_PUBLISHABLE_KEY on the API."
+            );
+          }
+
           const tokenized = await tokenizeCard({
-            publishableKey: stripeConfig.stripe_publishable_key,
+            publishableKey,
             number: options.number,
             exp: options.exp,
             cvv: options.cvv
@@ -214,7 +225,62 @@ export async function runCli(argv: string[]) {
         });
 
         printSection("Buy Response");
-        console.log(pretty(response));
+        const body = response as Record<string, unknown>;
+        const orderId = typeof body.order_id === "string" ? body.order_id : null;
+        const status = typeof body.status === "string" ? body.status : null;
+        const message = typeof body.message === "string" ? body.message : null;
+        const emailWarning = typeof body.email_warning === "string" ? body.email_warning : null;
+
+        if (orderId) {
+          console.log(`order_id: ${orderId}`);
+        }
+        if (status) {
+          console.log(`status: ${status}`);
+        }
+        if (message) {
+          console.log(`message: ${message}`);
+        }
+        if (emailWarning) {
+          console.log(`email_warning: ${emailWarning}`);
+        }
+
+        const product = body.product;
+        if (product && typeof product === "object") {
+          const p = product as Record<string, unknown>;
+          const priceRecord =
+            p.price && typeof p.price === "object"
+              ? (p.price as { amount?: unknown })
+              : null;
+          const priceAmount =
+            typeof priceRecord?.amount === "number" ? priceRecord.amount : null;
+          const availability =
+            typeof p.availability_status === "string" ? p.availability_status : null;
+
+          printSection("Product");
+          console.log(`${typeof p.selva_id === "string" ? p.selva_id : "n/a"}`);
+          console.log(`${typeof p.title === "string" ? p.title : "n/a"}`);
+          console.log(
+            `source: ${typeof p.provider === "string" ? p.provider : "n/a"} | price: ${money(priceAmount)}`
+          );
+          console.log(
+            `rating: ${typeof p.rating === "number" ? p.rating : "n/a"} | reviews: ${
+              typeof p.review_count === "number" ? p.review_count : "n/a"
+            }`
+          );
+          const productMeta = [
+            `delivery: ${typeof p.delivery_estimate === "string" ? p.delivery_estimate : "n/a"}`
+          ];
+          if (availability && availability !== "unknown") {
+            productMeta.unshift(`availability: ${availability}`);
+          }
+          console.log(productMeta.join(" | "));
+          console.log(`image: ${typeof p.image_url === "string" ? p.image_url : "n/a"}`);
+          console.log(`url: ${typeof p.url === "string" ? p.url : "n/a"}`);
+        }
+
+        if (!orderId && !status && (!product || typeof product !== "object")) {
+          console.log(pretty(response));
+        }
       }
     );
 
