@@ -5,7 +5,7 @@ description: Shopping platform for AI agents
 
 # Selva CLI
 
-Shopping platform for AI agents. Search, compare, and buy physical products from Amazon and Shopify through a single CLI.
+Shopping platform for AI agents. Search, compare, and buy physical products from Amazon through a single CLI.
 
 ## Setup
 
@@ -18,11 +18,11 @@ Shopping platform for AI agents. Search, compare, and buy physical products from
 
 ### Search
 `npx selva-cli search "<query>"`
-Returns up to 20 normalized results (10 per provider) with ocean_id, title, price, rating, source, and url. Requires address for best results but works without one.
+Returns up to 10 normalized results with `selva_id`, title, price, rating, source, and url. Requires address for best results but works without one.
 
 ### Details
 `npx selva-cli details <selva_id>`
-Returns full product details from the original provider. Use the selva_id from search results (e.g. amzn_B0EXAMPLE, shpf_12345).
+Returns full product details from the original provider. Use the `selva_id` from search results (e.g. `amzn_B0EXAMPLE`).
 
 ### Buy
 `npx selva-cli buy <selva_id> --method <saved|card>`
@@ -44,7 +44,7 @@ Lists all orders with status: pending, approved, expired, shipping.
 - `npx selva-cli settings set-phone --phone <phone>`
 
 ## Product ID Format
-IDs are prefixed by provider: `amzn_` for Amazon, `shpf_` for Shopify. Pass these to `details` and `buy`.
+IDs are prefixed by provider: `amzn_` for Amazon. Pass these to `details` and `buy`.
 
 ## Notes
 - All data except the API key is stored server-side. The only local file is ~/selva/config.json containing the API key.

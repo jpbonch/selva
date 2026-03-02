@@ -1,8 +1,83 @@
-# selva CLI
+# Selva CLI
 
-CLI client for Selva shopping API.
+Shopping platform CLI for AI agents. Search, inspect, and buy physical products from Amazon through a single interface.
 
-## Run locally
+## Quick start
+
+1. Register an API key:
+
+```bash
+npx selva-cli register
+```
+
+2. Set address (required before buying):
+
+```bash
+npx selva-cli settings set-address --street "123 Main St" --city "Austin" --state "TX" --zip "78701" --country "US"
+```
+
+3. Optionally set email (for receipts and approval notifications):
+
+```bash
+npx selva-cli settings set-email --email "you@example.com"
+```
+
+4. Optionally link a card / configure approval threshold via settings page:
+
+```bash
+npx selva-cli settings page
+```
+
+## Commands
+
+### Search
+
+```bash
+npx selva-cli search "<query>"
+```
+
+Returns up to 10 normalized results with `selva_id`, title, price, rating, source, and url.
+
+### Details
+
+```bash
+npx selva-cli details <selva_id>
+```
+
+Returns expanded product details for a result (for example `amzn_B0EXAMPLE`).
+
+### Buy
+
+```bash
+npx selva-cli buy <selva_id> --method <saved|card>
+```
+
+Options:
+
+- `--method saved` uses the linked card from settings page.
+- `--method card --number <num> --exp <MM/YY> --cvv <code>` uses card details and tokenizes via Stripe.
+
+### Orders
+
+```bash
+npx selva-cli orders
+```
+
+Lists all orders with status (`pending`, `approved`, `expired`, `shipping`).
+
+### Settings
+
+- `npx selva-cli settings`
+- `npx selva-cli settings page`
+- `npx selva-cli settings set-address --street <street> --city <city> --state <state> --zip <zip> --country <country>`
+- `npx selva-cli settings set-email --email <email>`
+- `npx selva-cli settings set-phone --phone <phone>`
+
+## Product ID format
+
+IDs are prefixed by provider: `amzn_` for Amazon.
+
+## Local development
 
 ```bash
 npm install
@@ -15,13 +90,16 @@ or
 ```bash
 bun install
 bun run build
-bun run dist/dev-index.js register
+bun ./dist/dev-index.js register
 ```
 
-`dist/index.js` targets `https://api.useselva.com` for production CLI usage.
+`dist/index.js` targets `https://api.useselva.com` for production usage.
 
 ## Publish to npm
 
-1. Ensure package name `selva` is available or update package name.
-2. Build: `npm run build`
-3. Publish: `npm publish --access public`
+```bash
+npm run build
+npm publish --access public
+```
+
+Package name: `selva-cli`.
