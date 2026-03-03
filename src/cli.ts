@@ -197,15 +197,9 @@ export async function runCli(argv: string[]) {
           }
 
           const stripeConfig = await stripePublishableKey();
-          const isAmazonPurchase = selvaId.startsWith("amzn_");
-          const publishableKey = isAmazonPurchase
-            ? (stripeConfig.rye_stripe_publishable_key ?? "")
-            : stripeConfig.stripe_publishable_key;
-
-          if (isAmazonPurchase && !publishableKey) {
-            throw new Error(
-              "Amazon/Rye purchase tokenization requires RYE_STRIPE_PUBLISHABLE_KEY on the API."
-            );
+          const publishableKey = stripeConfig.stripe_publishable_key;
+          if (!publishableKey) {
+            throw new Error("Card tokenization requires STRIPE_PUBLISHABLE_KEY on the API.");
           }
 
           const tokenized = await tokenizeCard({

@@ -271,6 +271,5 @@ export async function stripePublishableKey() {
 
   return parseResponse(response) as Promise<{
     stripe_publishable_key: string;
-    rye_stripe_publishable_key?: string | null;
   }>;
 }
