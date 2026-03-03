@@ -25,7 +25,7 @@ Shopping platform for AI agents. Search, compare, and buy physical products from
    - If name or address is missing, ask for them naturally.
    - If card is missing and user wants to buy, offer the settings link.
 3. **Search and guide**
-   - Present top choices clearly (title, price, rating, quick reason).
+   - Present top choices clearly (title, price, rating, delivery/get-it-by, image url, quick reason).
    - Ask a simple follow-up: "Want details on any of these?"
 4. **Buy**
    - Confirm selected item and payment method.
@@ -45,7 +45,9 @@ Shopping platform for AI agents. Search, compare, and buy physical products from
 
 ### Search
 `npx selva-cli search "<query>"`
-Returns up to 10 normalized results with `selva_id`, title, price, rating, source, and url. Requires address for best results but works without one.
+Returns up to 10 normalized results with `selva_id`, title, price, rating, source, url, `delivery_estimate` (get-it-by), and `image_url`.
+When presenting search results to users, always include delivery/get-it-by text and an image URL for each item when available.
+Requires address for best results but works without one.
 
 ### Details
 `npx selva-cli details <selva_id>`
@@ -97,6 +99,5 @@ IDs are prefixed by provider: `amzn_` for Amazon. Pass these to `details` and `b
 - `npx selva-cli settings set-name --name <name>`
 - `npx selva-cli settings set-email --email <email>`
 - `npx selva-cli settings set-phone --phone <phone>`
-
 
 
