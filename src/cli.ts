@@ -7,6 +7,8 @@ import {
   search,
   setAddress,
   setEmail,
+  setName,
+  setPhone,
   settingsPageLink,
   settingsSummary,
   stripePublishableKey
@@ -308,6 +310,19 @@ export async function runCli(argv: string[]) {
   settings.action(async () => {
     const response = await settingsSummary();
     const card = response.settings.card;
+    const address = response.settings.address;
+    const addressParts = address
+      ? [
+          address.street,
+          address.line2 ?? null,
+          address.city,
+          address.state,
+          `${address.zip} ${address.country}`
+        ].filter((value): value is string => Boolean(value && value.trim()))
+      : [];
+    console.log(`name: ${response.settings.name ?? "unset"}`);
+    console.log(`phone: ${response.settings.phone ?? "unset"}`);
+    console.log(`address: ${addressParts.length ? addressParts.join(", ") : "unset"}`);
     console.log(
       `threshold_limit: ${
         response.settings.approval_enabled
@@ -331,6 +346,7 @@ export async function runCli(argv: string[]) {
   settings
     .command("set-address")
     .requiredOption("--street <street>", "Street address")
+    .option("--line2 <line2>", "Address line 2 (optional)")
     .requiredOption("--city <city>", "City")
     .requiredOption("--state <state>", "State")
     .requiredOption("--zip <zip>", "ZIP code")
@@ -338,6 +354,7 @@ export async function runCli(argv: string[]) {
     .action(
       async (options: {
         street: string;
+        line2?: string;
         city: string;
         state: string;
         zip: string;
@@ -354,6 +371,22 @@ export async function runCli(argv: string[]) {
     .action(async (options: { email: string }) => {
       await setEmail(options.email);
       console.log("Email updated.");
+    });
+
+  settings
+    .command("set-name")
+    .requiredOption("--name <name>", "Full name")
+    .action(async (options: { name: string }) => {
+      await setName(options.name);
+      console.log("Name updated.");
+    });
+
+  settings
+    .command("set-phone")
+    .requiredOption("--phone <phone>", "Phone number")
+    .action(async (options: { phone: string }) => {
+      await setPhone(options.phone);
+      console.log("Phone updated.");
     });
 
   await program.parseAsync(argv);

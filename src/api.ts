@@ -95,8 +95,18 @@ export async function settingsSummary() {
 
   return parseResponse(response) as Promise<{
     settings: {
+      name: string | null;
+      phone: string | null;
       email: string | null;
       zip_code: string | null;
+      address: {
+        street: string;
+        line2?: string | null;
+        city: string;
+        state: string;
+        zip: string;
+        country: string;
+      } | null;
       approval_enabled: boolean;
       approval_threshold_amount: number | null;
       approval_threshold_currency: string;
@@ -124,6 +134,7 @@ export async function settingsPageLink() {
 
 export async function setAddress(input: {
   street: string;
+  line2?: string | null;
   city: string;
   state: string;
   zip: string;
@@ -139,6 +150,38 @@ export async function setAddress(input: {
       "x-api-key": apiKey
     },
     body: JSON.stringify(input)
+  });
+
+  return parseResponse(response);
+}
+
+export async function setName(name: string) {
+  const baseUrl = await resolveBaseUrl();
+  const apiKey = await requireApiKey();
+
+  const response = await fetch(`${baseUrl}/settings/name`, {
+    method: "PUT",
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": apiKey
+    },
+    body: JSON.stringify({ name })
+  });
+
+  return parseResponse(response);
+}
+
+export async function setPhone(phone: string) {
+  const baseUrl = await resolveBaseUrl();
+  const apiKey = await requireApiKey();
+
+  const response = await fetch(`${baseUrl}/settings/phone`, {
+    method: "PUT",
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": apiKey
+    },
+    body: JSON.stringify({ phone })
   });
 
   return parseResponse(response);

@@ -8,6 +8,8 @@ vi.mock("../src/api.js", () => ({
   search: vi.fn(),
   setAddress: vi.fn(),
   setEmail: vi.fn(),
+  setName: vi.fn(),
+  setPhone: vi.fn(),
   settingsPageLink: vi.fn(),
   settingsSummary: vi.fn(),
   stripePublishableKey: vi.fn()

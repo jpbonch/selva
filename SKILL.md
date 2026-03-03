@@ -22,7 +22,7 @@ Shopping platform for AI agents. Search, compare, and buy physical products from
 1. **Register quietly**
    - If registration is needed, do it and confirm briefly.
 2. **Check readiness**
-   - If address is missing, ask for address naturally.
+   - If name or address is missing, ask for them naturally.
    - If card is missing and user wants to buy, offer the settings link.
 3. **Search and guide**
    - Present top choices clearly (title, price, rating, quick reason).
@@ -35,9 +35,11 @@ Shopping platform for AI agents. Search, compare, and buy physical products from
 ## Setup
 
 1. `npx selva-cli register` — generates an API key, stored locally at ~/selva/config.json
-2. `npx selva-cli settings set-address --street "123 Main St" --city "Austin" --state "TX" --zip "78701" --country "US"` — required before buying
-3. Optionally set email for purchase receipts and approval notifications: `npx selva-cli settings set-email --email "you@example.com"`
-4. Optionally link a payment card and set an approval threshold at the web settings page: `npx selva-cli settings page`
+2. `npx selva-cli settings set-name --name "Jane Doe"` — required before buying
+3. `npx selva-cli settings set-address --street "123 Main St" --line2 "Apt 4B" --city "Austin" --state "TX" --zip "78701" --country "US"` — required before buying (`--line2` optional)
+4. Optionally set phone: `npx selva-cli settings set-phone --phone "+14155551234"`
+5. Optionally set email for purchase receipts and approval notifications: `npx selva-cli settings set-email --email "you@example.com"`
+6. Optionally link a payment card and set an approval threshold at the web settings page: `npx selva-cli settings page`
 
 # Commands
 
@@ -51,7 +53,7 @@ Returns full product details from the original provider. Use the `selva_id` from
 
 ### Buy
 `npx selva-cli buy <selva_id> --method <saved|card>`
-Requires address to be set. If an approval threshold is configured and the price exceeds it, the order enters a pending state and an approval email is sent.
+Requires name and address to be set. If an approval threshold is configured and the price exceeds it, the order enters a pending state and an approval email is sent.
 
 Options:
 - `--method saved` — uses the card linked on the settings page. Fails if no card is linked - ask the user to link one.
@@ -62,9 +64,10 @@ Options:
 Lists all orders with status: pending, approved, expired, shipping.
 
 ### Settings
-- `npx selva-cli settings` — view current address, email, approval threshold, and linked card info
+- `npx selva-cli settings` — view current name, phone, address, email, approval threshold, and linked card info
 - `npx selva-cli settings page` — generates a 24-hour link to the web settings page where a human can link/remove a payment card and set an approval threshold
-- `npx selva-cli settings set-address --street <street> --city <city> --state <state> --zip <zip> --country <country>`
+- `npx selva-cli settings set-address --street <street> [--line2 <line2>] --city <city> --state <state> --zip <zip> --country <country>`
+- `npx selva-cli settings set-name --name <name>`
 - `npx selva-cli settings set-email --email <email>`
 - `npx selva-cli settings set-phone --phone <phone>`
 
@@ -79,7 +82,7 @@ IDs are prefixed by provider: `amzn_` for Amazon. Pass these to `details` and `b
 - Fetch product details.
 - Buy by `selva_id`.
 - View orders.
-- Manage settings (address, email, settings page link).
+- Manage settings (name, phone, address, email, settings page link).
 
 ## Command Reference
 
@@ -90,10 +93,10 @@ IDs are prefixed by provider: `amzn_` for Amazon. Pass these to `details` and `b
 - `npx selva-cli orders`
 - `npx selva-cli settings`
 - `npx selva-cli settings page`
-- `npx selva-cli settings set-address --street <street> --city <city> --state <state> --zip <zip> --country <country>`
+- `npx selva-cli settings set-address --street <street> [--line2 <line2>] --city <city> --state <state> --zip <zip> --country <country>`
+- `npx selva-cli settings set-name --name <name>`
 - `npx selva-cli settings set-email --email <email>`
 - `npx selva-cli settings set-phone --phone <phone>`
-
 
 
 

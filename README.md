@@ -10,19 +10,31 @@ Shopping platform CLI for AI agents. Search, inspect, and buy physical products 
 npx selva-cli register
 ```
 
-2. Set address (required before buying):
+2. Set name (required before buying):
 
 ```bash
-npx selva-cli settings set-address --street "123 Main St" --city "Austin" --state "TX" --zip "78701" --country "US"
+npx selva-cli settings set-name --name "Jane Doe"
 ```
 
-3. Optionally set email (for receipts and approval notifications):
+3. Set address (required before buying, `--line2` optional):
+
+```bash
+npx selva-cli settings set-address --street "123 Main St" --line2 "Apt 4B" --city "Austin" --state "TX" --zip "78701" --country "US"
+```
+
+4. Optionally set phone:
+
+```bash
+npx selva-cli settings set-phone --phone "+14155551234"
+```
+
+5. Optionally set email (for receipts and approval notifications):
 
 ```bash
 npx selva-cli settings set-email --email "you@example.com"
 ```
 
-4. Optionally link a card / configure approval threshold via settings page:
+6. Optionally link a card / configure approval threshold via settings page:
 
 ```bash
 npx selva-cli settings page
@@ -52,6 +64,8 @@ Returns expanded product details for a result (for example `amzn_B0EXAMPLE`).
 npx selva-cli buy <selva_id> --method <saved|card>
 ```
 
+Requires name and address to be set before placing an order.
+
 Options:
 
 - `--method saved` uses the linked card from settings page.
@@ -69,7 +83,8 @@ Lists all orders with status (`pending`, `approved`, `expired`, `shipping`).
 
 - `npx selva-cli settings`
 - `npx selva-cli settings page`
-- `npx selva-cli settings set-address --street <street> --city <city> --state <state> --zip <zip> --country <country>`
+- `npx selva-cli settings set-address --street <street> [--line2 <line2>] --city <city> --state <state> --zip <zip> --country <country>`
+- `npx selva-cli settings set-name --name <name>`
 - `npx selva-cli settings set-email --email <email>`
 - `npx selva-cli settings set-phone --phone <phone>`
 
