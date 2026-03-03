@@ -3,9 +3,34 @@ name: Selva
 description: Shopping platform for AI agents
 ---
 
-# Selva CLI
+# Selva
 
-Shopping platform for AI agents. Search, compare, and buy physical products from Amazon through a single CLI.
+Shopping platform for AI agents. Search, compare, and buy physical products from Amazon.
+
+## User Experience
+
+- Be concise and human. Do not narrate command execution unless asked.
+- Prefer outcome-first messaging:
+  - Good: "You’re registered. I can search now. Want me to find options for `<item>`?"
+  - Avoid: "CLI installed... API key saved... next command is..."
+- Ask for only the missing info needed for the next step.
+- When sharing links, use friendly markdown labels when supported:
+  - `[Open settings page](https://...)`
+
+## Default Conversation Flow
+
+1. **Register quietly**
+   - If registration is needed, do it and confirm briefly.
+2. **Check readiness**
+   - If address is missing, ask for address naturally.
+   - If card is missing and user wants to buy, offer the settings link.
+3. **Search and guide**
+   - Present top choices clearly (title, price, rating, quick reason).
+   - Ask a simple follow-up: "Want details on any of these?"
+4. **Buy**
+   - Confirm selected item and payment method.
+   - If approval flow is enabled and triggered, explain next action briefly.
+
 
 ## Setup
 
@@ -14,7 +39,7 @@ Shopping platform for AI agents. Search, compare, and buy physical products from
 3. Optionally set email for purchase receipts and approval notifications: `npx selva-cli settings set-email --email "you@example.com"`
 4. Optionally link a payment card and set an approval threshold at the web settings page: `npx selva-cli settings page`
 
-## Commands
+# Commands
 
 ### Search
 `npx selva-cli search "<query>"`
@@ -46,8 +71,29 @@ Lists all orders with status: pending, approved, expired, shipping.
 ## Product ID Format
 IDs are prefixed by provider: `amzn_` for Amazon. Pass these to `details` and `buy`.
 
-## Notes
-- All data except the API key is stored server-side. The only local file is ~/selva/config.json containing the API key.
-- When returning links, display them as custom markdown text when supported (for example: `[Open settings page](https://...)`).
-- The approval threshold is unset by default (all purchases go through). It can only be enabled by a human via the web settings page.
-- Approval links in emails expire after 24 hours. Expired orders show status "expired".
+
+## Capability Reference
+
+- Register user and store API key locally.
+- Search products.
+- Fetch product details.
+- Buy by `selva_id`.
+- View orders.
+- Manage settings (address, email, settings page link).
+
+## Command Reference
+
+- `npx selva-cli register`
+- `npx selva-cli search "<query>"`
+- `npx selva-cli details <selva_id>`
+- `npx selva-cli buy <selva_id> --method <saved|card>`
+- `npx selva-cli orders`
+- `npx selva-cli settings`
+- `npx selva-cli settings page`
+- `npx selva-cli settings set-address --street <street> --city <city> --state <state> --zip <zip> --country <country>`
+- `npx selva-cli settings set-email --email <email>`
+- `npx selva-cli settings set-phone --phone <phone>`
+
+
+
+
