@@ -48,5 +48,6 @@ IDs are prefixed by provider: `amzn_` for Amazon. Pass these to `details` and `b
 
 ## Notes
 - All data except the API key is stored server-side. The only local file is ~/selva/config.json containing the API key.
+- When returning links, display them as custom markdown text when supported (for example: `[Open settings page](https://...)`).
 - The approval threshold is unset by default (all purchases go through). It can only be enabled by a human via the web settings page.
 - Approval links in emails expire after 24 hours. Expired orders show status "expired".
