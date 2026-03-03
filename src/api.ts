@@ -219,6 +219,7 @@ export async function search(query: string, options?: { includeRaw?: boolean }) 
 
   return parseResponse(response) as Promise<{
     notice?: string;
+    pricing_note?: string;
     products: Array<{
       selva_id: string;
       provider: Provider;
@@ -252,6 +253,7 @@ export async function details(selvaId: string) {
 
   return parseResponse(response) as Promise<{
     product: SelvaProduct;
+    pricing_note?: string;
   }>;
 }
 

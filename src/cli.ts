@@ -54,6 +54,9 @@ export async function runCli(argv: string[]) {
       }
 
       printSection("Search Results");
+      if (response.pricing_note) {
+        console.log(`(${response.pricing_note})`);
+      }
       if (!response.products.length) {
         console.log("No products found.");
       }
@@ -93,6 +96,9 @@ export async function runCli(argv: string[]) {
       const response = await details(selvaId);
 
       printSection("Product Details");
+      if (response.pricing_note) {
+        console.log(`(${response.pricing_note})`);
+      }
       const p = response.product;
       console.log(`selva_id: ${p.selva_id}`);
       console.log(`title: ${p.title}`);
