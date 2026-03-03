@@ -332,7 +332,6 @@ export async function runCli(argv: string[]) {
     .action(async () => {
       const response = await settingsPageLink();
       console.log(response.url);
-      console.log(`(expires in ${response.expires_in_hours} hours)`);
     });
 
   settings
