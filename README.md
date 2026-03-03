@@ -34,7 +34,7 @@ npx selva-cli settings set-phone --phone "+14155551234"
 npx selva-cli settings set-email --email "you@example.com"
 ```
 
-6. Optionally link a card / configure approval threshold via settings page:
+6. Link a card / optionally configure approval threshold via settings page:
 
 ```bash
 npx selva-cli settings page
@@ -49,6 +49,7 @@ npx selva-cli search "<query>"
 ```
 
 Returns up to 10 normalized results with `selva_id`, title, price, rating, source, and url.
+Delivery text is normalized to `Prime, get it tomorrow`.
 
 ### Details
 
@@ -65,11 +66,12 @@ npx selva-cli buy <selva_id> --method <saved|card>
 ```
 
 Requires name and address to be set before placing an order.
+Buy creates a manual-fulfillment order record; checkout/marketplace placement happens later by an operator.
 
 Options:
 
 - `--method saved` uses the linked card from settings page.
-- `--method card --number <num> --exp <MM/YY> --cvv <code>` uses card details and tokenizes via Stripe.
+- `--method card --number <num> --exp <MM/YY> --cvv <code>` tokenizes with Stripe and saves a reusable payment method snapshot for later manual charge.
 
 ### Orders
 
@@ -78,6 +80,9 @@ npx selva-cli orders
 ```
 
 Lists all orders with status (`pending`, `approved`, `expired`, `shipping`).
+- `pending`: waiting for approval email action.
+- `approved`: queued for manual operator charge/fulfillment.
+- `shipping`: manually marked shipping by operator.
 
 ### Settings
 

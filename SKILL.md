@@ -39,13 +39,14 @@ Shopping platform for AI agents. Search, compare, and buy physical products from
 3. `npx selva-cli settings set-address --street "123 Main St" --line2 "Apt 4B" --city "Austin" --state "TX" --zip "78701" --country "US"` — required before buying (`--line2` optional)
 4. Optionally set phone: `npx selva-cli settings set-phone --phone "+14155551234"`
 5. Optionally set email for purchase receipts and approval notifications: `npx selva-cli settings set-email --email "you@example.com"`
-6. Optionally link a payment card and set an approval threshold at the web settings page: `npx selva-cli settings page`
+6. Link a payment card and optionally set an approval threshold at the web settings page: `npx selva-cli settings page`
 
 # Commands
 
 ### Search
 `npx selva-cli search "<query>"`
 Returns up to 10 normalized results with `selva_id`, title, price, rating, source, url, `delivery_estimate` (get-it-by), and `image_url`.
+Delivery text is normalized to `Prime, get it tomorrow`.
 When presenting search results to users, always include delivery/get-it-by text and an image URL for each item when available.
 Requires address for best results but works without one.
 
@@ -55,15 +56,20 @@ Returns full product details from the original provider. Use the `selva_id` from
 
 ### Buy
 `npx selva-cli buy <selva_id> --method <saved|card>`
-Requires name and address to be set. If an approval threshold is configured and the price exceeds it, the order enters a pending state and an approval email is sent.
+Requires name, address, and a chargeable card profile. Buy does not place the marketplace order immediately; it creates a manual-fulfillment order record.
+If an approval threshold is configured and the price exceeds it, the order enters a pending state and an approval email is sent.
 
 Options:
 - `--method saved` — uses the card linked on the settings page. Fails if no card is linked - ask the user to link one.
-- `--method card --number <num> --exp <MM/YY> --cvv <code>` — if you know the card details already or can generate cards. Card details never reach the Selva API.
+- `--method card --number <num> --exp <MM/YY> --cvv <code>` — tokenizes with Stripe and saves a reusable payment method snapshot for manual charge later. Card details never reach the Selva API.
 
 ### Orders
 `npx selva-cli orders`
 Lists all orders with status: pending, approved, expired, shipping.
+Status meaning:
+- `pending`: waiting for user approval email click.
+- `approved`: ready for manual operator charge/fulfillment.
+- `shipping`: manually marked as placed/shipping by operator.
 
 ### Settings
 - `npx selva-cli settings` — view current name, phone, address, email, approval threshold, and linked card info
@@ -99,5 +105,4 @@ IDs are prefixed by provider: `amzn_` for Amazon. Pass these to `details` and `b
 - `npx selva-cli settings set-name --name <name>`
 - `npx selva-cli settings set-email --email <email>`
 - `npx selva-cli settings set-phone --phone <phone>`
-
 
