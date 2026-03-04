@@ -16,9 +16,10 @@ Shopping platform for AI agents. Search, compare, and buy physical products from
 - Ask for only the missing info needed for the next step.
 - When sharing links, use friendly markdown labels when supported:
   - `[Open settings page](https://...)`
-- When listing products, render images inline with markdown, not as raw URL text:
-  - `![<short product name>](<image_url>)`
-  - Also include a fallback link when useful: `[Open image](<image_url>)`
+- When listing products for chat clients, send each product as a separate message with:
+  - the product image as a photo attachment
+  - a short caption (title, price, rating/reviews, delivery)
+  - a final text message asking which item to open or buy
 
 ## Default Conversation Flow
 
@@ -50,8 +51,8 @@ Shopping platform for AI agents. Search, compare, and buy physical products from
 `npx selva-cli search "<query>"`
 Returns up to 10 normalized results with `selva_id`, title, price, rating, source, url, `delivery_estimate` (get-it-by), and `image_url`.
 Delivery text is normalized to `Prime, get it tomorrow`.
-When presenting search results to users, always include delivery/get-it-by text and an inline markdown image for each item when available.
-If inline markdown images are not supported by the client, include a clickable image link.
+When presenting search results to users, always include delivery/get-it-by text.
+Prefer separate photo messages with captions (one per item) over markdown image links.
 Requires address for best results but works without one.
 
 ### Details
