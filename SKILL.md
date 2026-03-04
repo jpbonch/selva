@@ -60,20 +60,20 @@ Returns full product details from the original provider. Use the `selva_id` from
 
 ### Buy
 `npx selva-cli buy <selva_id> --method <saved|card>`
-Requires name, address, and a chargeable card profile. Buy does not place the marketplace order immediately; it creates a manual-fulfillment order record.
-If an approval threshold is configured and the price exceeds it, the order enters a pending state and an approval email is sent.
+Requires name, address, and a chargeable card profile. Buy creates an order record and returns its current status.
+If an approval threshold is configured and the price exceeds it, the order enters `awaiting_approval` and an approval email is sent.
 
 Options:
 - `--method saved` — uses the card linked on the settings page. Fails if no card is linked - ask the user to link one.
-- `--method card --number <num> --exp <MM/YY> --cvv <code>` — tokenizes with Stripe and saves a reusable payment method snapshot for manual charge later. Card details never reach the Selva API.
+- `--method card --number <num> --exp <MM/YY> --cvv <code>` — tokenizes with Stripe and saves a reusable payment method snapshot for later processing. Card details never reach the Selva API.
 
 ### Orders
 `npx selva-cli orders`
-Lists all orders with status: pending, approved, expired, shipping.
+Lists all orders with status: awaiting_approval, processing, expired, shipping.
 Status meaning:
-- `pending`: waiting for user approval email click.
-- `approved`: ready for manual operator charge/fulfillment.
-- `shipping`: manually marked as placed/shipping by operator.
+- `awaiting_approval`: waiting for user approval email click.
+- `processing`: order accepted and being processed.
+- `shipping`: shipping status has been updated.
 
 ### Settings
 - `npx selva-cli settings` — view current name, phone, address, email, approval threshold, and linked card info

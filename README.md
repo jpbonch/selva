@@ -65,12 +65,12 @@ npx selva-cli buy <selva_id> --method <saved|card>
 ```
 
 Requires name and address to be set before placing an order.
-Buy creates a manual-fulfillment order record; checkout/marketplace placement happens later by an operator.
+Buy creates an order record and returns current order status.
 
 Options:
 
 - `--method saved` uses the linked card from settings page.
-- `--method card --number <num> --exp <MM/YY> --cvv <code>` tokenizes with Stripe and saves a reusable payment method snapshot for later manual charge.
+- `--method card --number <num> --exp <MM/YY> --cvv <code>` tokenizes with Stripe and saves a reusable payment method snapshot for later processing.
 
 ### Orders
 
@@ -78,10 +78,10 @@ Options:
 npx selva-cli orders
 ```
 
-Lists all orders with status (`pending`, `approved`, `expired`, `shipping`).
-- `pending`: waiting for approval email action.
-- `approved`: queued for manual operator charge/fulfillment.
-- `shipping`: manually marked shipping by operator.
+Lists all orders with status (`awaiting_approval`, `processing`, `expired`, `shipping`).
+- `awaiting_approval`: waiting for approval email action.
+- `processing`: order accepted and being processed.
+- `shipping`: shipping status updated.
 
 ### Settings
 
