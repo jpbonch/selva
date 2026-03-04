@@ -50,7 +50,6 @@ Shopping platform for AI agents. Search, compare, and buy physical products from
 ### Search
 `npx selva-cli search "<query>"`
 Returns up to 10 normalized results with `selva_id`, title, price, rating, source, url, `delivery_estimate` (get-it-by), and `image_url`.
-Delivery text is normalized to `Prime, get it tomorrow`.
 When presenting search results to users, always include delivery/get-it-by text.
 Prefer separate photo messages with captions (one per item) over markdown image links.
 Requires address for best results but works without one.

@@ -49,7 +49,6 @@ npx selva-cli search "<query>"
 ```
 
 Returns up to 10 normalized results with `selva_id`, title, price, rating, source, and url.
-Delivery text is normalized to `Prime, get it tomorrow`.
 
 ### Details
 
